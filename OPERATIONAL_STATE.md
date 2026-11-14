@@ -1,8 +1,8 @@
 # The Sixth Month - Operational State
 
 Project ID: `the-sixth-month-standalone`
-Revision: 18
-Status: R13 full twenty-opportunity integration implemented in isolated source. Independent Big Mac semantic/typecheck/test/build and bounded Brave Metal WebGL verified (118 Node; 27+18+11 browser; forced-offline reload). Not release-certified: representative foreground FPS, physical touch, long-session endurance and human audio/visual approval remain OPEN.
+Revision: 19
+Status: R13 source verified and committed in a dedicated local Git history. GitHub Pages CI workflow prepared but remote repository creation, push, Pages activation and live-site verification remain BLOCKED on GitHub credentials/capabilities. Independent Big Mac semantic/typecheck/test/build and bounded Brave Metal WebGL verified (118 Node; 27+18+11 browser; forced-offline reload). Not release-certified: representative foreground FPS, physical touch, long-session endurance and human audio/visual approval remain OPEN.
 
 ## Authority
 - User-provided build contract in `Pasted text.txt`, November 13 2026.
@@ -147,3 +147,11 @@ Status: R13 full twenty-opportunity integration implemented in isolated source. 
 - Independent Apple M4 `npm run check`: typechecking PASS, 118 tests PASS, Vite build PASS. Brave WebGL2 bounded suite: 27/27 legacy +18/18 feature +11/11 new entry/WASD/crew PASS; offline v16 SW forced reload PASS. Exact build has nonfatal >500 kB JS chunk warning.
 - Source release remains NOT CERTIFIED: browser headless throttles frame timers; no reliable R12-vs-R13 foreground FPS comparison, long session, real touch, human audio listening or final artistic approval. Full named evidence locators and block states in `docs/R13_BROWSER_QA_SUMMARY.md`.
 - R12 and older ZIPs remain preserved; next revision should start from exact verified R13 packaged ZIP, not an intermediate validation patch.
+
+
+## Revision 19 - 2026-11-14 dedicated Git baseline and Pages preparation
+- Source of truth for this work: exact Google Drive `THE_SIXTH_MONTH_ORBITAL_TOMB_R13.zip`; original source SHA-256 manifest retained verbatim at `docs/R13_ARCHIVED_SOURCE_MANIFEST.sha256`, with a separate current-checkout `MANIFEST.sha256`; historical ZIP archives preserved. Dedicated local Git repository rooted at `the-sixth-month-orbital-tomb`, branch `main`. First commit `c5bb0072e4fd5f14669f0736009444aee9cc81a9` contains original R13 files and was verified clean with a complete Git bundle.
+- Added `.github/workflows/pages.yml` to run typecheck, 118-test suite and Vite build on Node 22, verify key shipped assets, and deploy only `dist/` via GitHub Pages Actions when configured. Relative Vite base and runtime service-worker URL already support a project subpath. Added published MIT notices and a bounded publication procedure in `docs/GITHUB_PAGES_PUBLICATION.md`.
+- No changes to Meridian/Virgil canon, Month Zero-Six, docking arms, models or tested mechanics. Only operational state, current-checkout manifest and new publication files differ from original R13 source.
+- Remote GitHub target `westkitty/the-sixth-month-orbital-tomb` was not found at last check. Connected GitHub tool cannot create repositories, Big Mac `gh` is unauthenticated, and MacBook remote command queue is blocked. Therefore no push, GitHub Actions run, Pages activation, public site or remote parity is claimed.
+- This Git workflow change was statically checked locally; R13's previously verified browser performance evidence cannot be promoted to production Pages proof. On successful authenticated push, confirm branch commit SHA, GitHub Actions build/deploy status, Pages URL and real browser journeys. Preserve all prior R13 release-signoff unknowns.

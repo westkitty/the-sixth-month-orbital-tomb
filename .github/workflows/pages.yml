@@ -1,0 +1,63 @@
+name: Build, verify, and publish The Sixth Month
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: the-sixth-month-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Verify source and build site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v6
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned direct dependencies
+        run: npm install --no-audit --no-fund
+      - name: Run checks and build
+        run: npm run check
+      - name: Verify publishable site
+        run: |
+          test -s dist/index.html
+          test -s dist/sw.js
+          test -s dist/THIRD_PARTY_NOTICES.txt
+          test -s dist/assets/crew/pilot_male.glb
+          test -s dist/assets/crew/pilot_female.glb
+          test -s dist/assets/crew/medic_female.glb
+          test -s dist/textures/meridian_identification.png
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          # The repository owner must first enable Pages -> GitHub Actions.
+          # Auto-enablement needs a separate elevated token, not GITHUB_TOKEN.
+          enablement: false
+      - name: Upload verified build only
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    name: Publish GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy verified build
+        id: deployment
+        uses: actions/deploy-pages@v4
