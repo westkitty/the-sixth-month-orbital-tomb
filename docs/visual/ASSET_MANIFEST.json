@@ -1,0 +1,144 @@
+{
+  "generator": "tools/generate_materials.py",
+  "purpose": "source-informed original Meridian game textures",
+  "source_images_copied_into_maps": false,
+  "runtime_external_network": false,
+  "files": [
+    {
+      "name": "caution_band.png",
+      "width": 512,
+      "height": 96,
+      "mode": "RGB",
+      "size_bytes": 1999,
+      "sha256": "82d5f7e3e49f6287535290a0d88f533a031824488a235871b1294582212401ed",
+      "use": "authored in-game material"
+    },
+    {
+      "name": "deck_grate_albedo.png",
+      "width": 768,
+      "height": 768,
+      "mode": "RGB",
+      "size_bytes": 286115,
+      "sha256": "30cb817937463eaad8b836a721d182c6425d701b1e25e72bc0dc4ebb659e7385",
+      "use": "authored in-game material"
+    },
+    {
+      "name": "deck_grate_roughness.png",
+      "width": 768,
+      "height": 768,
+      "mode": "L",
+      "size_bytes": 466237,
+      "sha256": "d694e805565e66ab44ef473dbefbb237116ff664f769dde145d63bf487faaf0b",
+      "use": "authored in-game material"
+    },
+    {
+      "name": "dock_id_atlas.png",
+      "width": 1024,
+      "height": 768,
+      "mode": "RGB",
+      "size_bytes": 45549,
+      "sha256": "e0b70e54906cdc411fb0d8043ecc4366aa135396098fc5ed48f2c0459fec0625",
+      "use": "authored in-game material"
+    },
+    {
+      "name": "door_cargo.png",
+      "width": 512,
+      "height": 768,
+      "mode": "RGB",
+      "size_bytes": 14327,
+      "sha256": "4c647afa747996d504ee3be1fe0366fc980a503c6e8215abf450172f4c5de794",
+      "use": "original service-panel signage"
+    },
+    {
+      "name": "door_cryo.png",
+      "width": 512,
+      "height": 768,
+      "mode": "RGB",
+      "size_bytes": 15381,
+      "sha256": "02d63f13ce9302f480db862c9ebab563148294feefbbd5bc771b7cf2bf5fa4ac",
+      "use": "original service-panel signage"
+    },
+    {
+      "name": "door_hydro.png",
+      "width": 512,
+      "height": 768,
+      "mode": "RGB",
+      "size_bytes": 16055,
+      "sha256": "6c706aaec512590755d88830e7b9e9520e6904fff9793568ae7a8c4c00015d7c",
+      "use": "original service-panel signage"
+    },
+    {
+      "name": "door_observation.png",
+      "width": 512,
+      "height": 768,
+      "mode": "RGB",
+      "size_bytes": 15097,
+      "sha256": "6e982dba85e4465fd45103e516f1ab1396d0bfc82bfb3ea0d9089b7bd422924e",
+      "use": "original service-panel signage"
+    },
+    {
+      "name": "door_service.png",
+      "width": 512,
+      "height": 768,
+      "mode": "RGB",
+      "size_bytes": 14130,
+      "sha256": "134eca3a98001de068b124e5c605919ba219dc0e82e70c9d1ce4173fa8cffa83",
+      "use": "original service-panel signage"
+    },
+    {
+      "name": "meridian_identification.png",
+      "width": 1024,
+      "height": 256,
+      "mode": "RGBA",
+      "size_bytes": 15558,
+      "sha256": "659afb538169a6f3b2afaf784d68f02f288c951f951a8ad8b40cd0f4fa2668de",
+      "use": "authored in-game material"
+    },
+    {
+      "name": "monitor_console.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "size_bytes": 6187,
+      "sha256": "d92971b6b38fca8144921d9165a57e6744a161b42f0eecf3301937a6d398818d",
+      "use": "authored in-game material"
+    },
+    {
+      "name": "titanium_panel_albedo.png",
+      "width": 768,
+      "height": 768,
+      "mode": "RGB",
+      "size_bytes": 441638,
+      "sha256": "ad19898e2f72a8e16f81ff0d4d756b95b070d1a86ddbf0343d120d427982ba36",
+      "use": "authored in-game material"
+    },
+    {
+      "name": "titanium_panel_roughness.png",
+      "width": 768,
+      "height": 768,
+      "mode": "L",
+      "size_bytes": 442113,
+      "sha256": "81192bf4ae6ace6b8f9c76b00f03b4d1d65e69d472c6cc60d2ca7f63cc5d8276",
+      "use": "authored in-game material"
+    },
+    {
+      "name": "viewport_frost.png",
+      "width": 1024,
+      "height": 128,
+      "mode": "RGBA",
+      "size_bytes": 12864,
+      "sha256": "392a6e7b76b51843720cbe0971a41c948c482d2f1c07cbc663b01d8993c2197c",
+      "use": "authored in-game material"
+    },
+    {
+      "name": "wayfinding_floor.png",
+      "width": 384,
+      "height": 640,
+      "mode": "RGB",
+      "size_bytes": 10541,
+      "sha256": "b089e24c4d2dc36e2100845f8e74e63f1b47297f8f32cca07d1686489ec8ecb9",
+      "use": "authored in-game material"
+    }
+  ],
+  "total_bytes": 1803791
+}

@@ -1,0 +1,266 @@
+
+> the-sixth-month@0.1.0 test
+> tsc -p tsconfig.test.json && node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: real station colliders have stable owners and leave former-room spawn unblocked
+ok 1 - real station colliders have stable owners and leave former-room spawn unblocked
+  ---
+  duration_ms: 4.074707
+  type: 'test'
+  ...
+# Subtest: a human can walk the preserved observation/corridor/command route
+ok 2 - a human can walk the preserved observation/corridor/command route
+  ---
+  duration_ms: 29.600275
+  type: 'test'
+  ...
+# Subtest: wall and observation window stop sprint-speed movement without tunnelling
+ok 3 - wall and observation window stop sprint-speed movement without tunnelling
+  ---
+  duration_ms: 6.54481
+  type: 'test'
+  ...
+# Subtest: free float collides with floors and hulls but does not create ghost collision after departure
+ok 4 - free float collides with floors and hulls but does not create ghost collision after departure
+  ---
+  duration_ms: 2.160112
+  type: 'test'
+  ...
+# Subtest: electric cut seams exist during disassembly, reverse scrubbing is reversible
+ok 5 - electric cut seams exist during disassembly, reverse scrubbing is reversible
+  ---
+  duration_ms: 1.48596
+  type: 'test'
+  ...
+# Subtest: speed, visibility and watch preferences normalize old saves and reject extreme values
+ok 6 - speed, visibility and watch preferences normalize old saves and reject extreme values
+  ---
+  duration_ms: 0.826506
+  type: 'test'
+  ...
+# Subtest: one simulation loop owns motion and temporal effects, including disposal
+ok 7 - one simulation loop owns motion and temporal effects, including disposal
+  ---
+  duration_ms: 1.054111
+  type: 'test'
+  ...
+# Subtest: seven genuine timeline checkpoints and exactly six weather profiles
+ok 8 - seven genuine timeline checkpoints and exactly six weather profiles
+  ---
+  duration_ms: 1.730777
+  type: 'test'
+  ...
+# Subtest: reference geometry never changes the primary station identity
+ok 9 - reference geometry never changes the primary station identity
+  ---
+  duration_ms: 0.404796
+  type: 'test'
+  ...
+# Subtest: all six progressive removal waves exist and preserve song family ordering
+ok 10 - all six progressive removal waves exist and preserve song family ordering
+  ---
+  duration_ms: 0.246542
+  type: 'test'
+  ...
+# Subtest: the station has continuous, non-teleporting deterministic removal trajectories
+ok 11 - the station has continuous, non-teleporting deterministic removal trajectories
+  ---
+  duration_ms: 2.699661
+  type: 'test'
+  ...
+# Subtest: sequence of earlier time scrubs never affects current pose
+ok 12 - sequence of earlier time scrubs never affects current pose
+  ---
+  duration_ms: 1.604045
+  type: 'test'
+  ...
+# Subtest: each month has a measurably different structural population
+ok 13 - each month has a measurably different structural population
+  ---
+  duration_ms: 0.889472
+  type: 'test'
+  ...
+# Subtest: observation room original world coordinate is preserved while geometry vanishes
+ok 14 - observation room original world coordinate is preserved while geometry vanishes
+  ---
+  duration_ms: 0.453105
+  type: 'test'
+  ...
+# Subtest: collider walk zones disappear with their floor, including late access
+ok 15 - collider walk zones disappear with their floor, including late access
+  ---
+  duration_ms: 0.197536
+  type: 'test'
+  ...
+# Subtest: anchoring requires existing nearby geometry, then invalidates after removal
+ok 16 - anchoring requires existing nearby geometry, then invalidates after removal
+  ---
+  duration_ms: 0.711045
+  type: 'test'
+  ...
+# Subtest: six named body landmarks are actual stateful physical objects, never afterlife agents
+ok 17 - six named body landmarks are actual stateful physical objects, never afterlife agents
+  ---
+  duration_ms: 0.619863
+  type: 'test'
+  ...
+# Subtest: stochastic visual sampling uses fixed seed, not current frame order
+ok 18 - stochastic visual sampling uses fixed seed, not current frame order
+  ---
+  duration_ms: 0.29881
+  type: 'test'
+  ...
+# Subtest: timeline descriptions disclose reconstruction rather than false dates
+ok 19 - timeline descriptions disclose reconstruction rather than false dates
+  ---
+  duration_ms: 0.230985
+  type: 'test'
+  ...
+# Subtest: state persists meaningful controls, route and camera position
+ok 20 - state persists meaningful controls, route and camera position
+  ---
+  duration_ms: 0.828207
+  type: 'test'
+  ...
+# Subtest: malformed state and arbitrary save storage failure never corrupt baseline
+ok 21 - malformed state and arbitrary save storage failure never corrupt baseline
+  ---
+  duration_ms: 0.288043
+  type: 'test'
+  ...
+# Subtest: evidence identity is bounded, uniquely keyed, and attached to real structures
+ok 22 - evidence identity is bounded, uniquely keyed, and attached to real structures
+  ---
+  duration_ms: 2.555876
+  type: 'test'
+  ...
+# Subtest: physical window and its empty original coordinates are distinct scan targets
+ok 23 - physical window and its empty original coordinates are distinct scan targets
+  ---
+  duration_ms: 1.516098
+  type: 'test'
+  ...
+# Subtest: departed fragment is physically elsewhere and does not pretend to be the empty former room
+ok 24 - departed fragment is physically elsewhere and does not pretend to be the empty former room
+  ---
+  duration_ms: 2.155012
+  type: 'test'
+  ...
+# Subtest: structural census derives only from live removal logic, never fabricated populations
+ok 25 - structural census derives only from live removal logic, never fabricated populations
+  ---
+  duration_ms: 1.285429
+  type: 'test'
+  ...
+# Subtest: reconstructed source constraints remain explicit at all thirteen inspection points
+ok 26 - reconstructed source constraints remain explicit at all thirteen inspection points
+  ---
+  duration_ms: 0.754535
+  type: 'test'
+  ...
+# Subtest: all six named landmark scan positions derive from the same physical source as the world
+ok 27 - all six named landmark scan positions derive from the same physical source as the world
+  ---
+  duration_ms: 1.288229
+  type: 'test'
+  ...
+# Subtest: old save schema upgrades without destroying navigation or inventing discoveries
+ok 28 - old save schema upgrades without destroying navigation or inventing discoveries
+  ---
+  duration_ms: 0.99878
+  type: 'test'
+  ...
+# Subtest: inspection UI has keyboard and touch access, actual gameplay caller and model texture lifecycle
+ok 29 - inspection UI has keyboard and touch access, actual gameplay caller and model texture lifecycle
+  ---
+  duration_ms: 3.125998
+  type: 'test'
+  ...
+# Subtest: signature realization only claims a prior visit when the actual route proves one
+ok 30 - signature realization only claims a prior visit when the actual route proves one
+  ---
+  duration_ms: 0.668765
+  type: 'test'
+  ...
+# Subtest: every UI element referenced from the real interaction path exists in the shipped HTML
+ok 31 - every UI element referenced from the real interaction path exists in the shipped HTML
+  ---
+  duration_ms: 2.141964
+  type: 'test'
+  ...
+# Subtest: inspection points inherit the actual parent yaw and the exact physical connection across reversal
+ok 32 - inspection points inherit the actual parent yaw and the exact physical connection across reversal
+  ---
+  duration_ms: 0.518519
+  type: 'test'
+  ...
+# Subtest: all static UI element IDs referenced by semantic interface code exist
+ok 33 - all static UI element IDs referenced by semantic interface code exist
+  ---
+  duration_ms: 1.430709
+  type: 'test'
+  ...
+# Subtest: one authoritative animation loop, with supported cleanup
+ok 34 - one authoritative animation loop, with supported cleanup
+  ---
+  duration_ms: 0.439309
+  type: 'test'
+  ...
+# Subtest: actual originally built meshes are used for ghost and temporal comparison, not surrogate boxes
+ok 35 - actual originally built meshes are used for ghost and temporal comparison, not surrogate boxes
+  ---
+  duration_ms: 0.145374
+  type: 'test'
+  ...
+# Subtest: weather is bounded to planet probe and exposes all six profiles
+ok 36 - weather is bounded to planet probe and exposes all six profiles
+  ---
+  duration_ms: 0.134445
+  type: 'test'
+  ...
+# Subtest: world remains standalone: no museum imports, no runtime cloud rendering
+ok 37 - world remains standalone: no museum imports, no runtime cloud rendering
+  ---
+  duration_ms: 0.562929
+  type: 'test'
+  ...
+# Subtest: 15 original runtime texture assets exist as valid nonempty PNG files
+ok 38 - 15 original runtime texture assets exist as valid nonempty PNG files
+  ---
+  duration_ms: 3.956486
+  type: 'test'
+  ...
+# Subtest: new art has one runtime owner, preserves exact original geometry ghosts and disposal
+ok 39 - new art has one runtime owner, preserves exact original geometry ghosts and disposal
+  ---
+  duration_ms: 0.285652
+  type: 'test'
+  ...
+# Subtest: materials remain offline and deterministic without CDN or generation APIs
+ok 40 - materials remain offline and deterministic without CDN or generation APIs
+  ---
+  duration_ms: 0.37682
+  type: 'test'
+  ...
+# Subtest: twelve docking identity plates share one authored atlas and their stable existing IDs
+ok 41 - twelve docking identity plates share one authored atlas and their stable existing IDs
+  ---
+  duration_ms: 0.383925
+  type: 'test'
+  ...
+# Subtest: directional floor graphics are local to live geometry and offline cache is versioned
+ok 42 - directional floor graphics are local to live geometry and offline cache is versioned
+  ---
+  duration_ms: 0.268509
+  type: 'test'
+  ...
+1..42
+# tests 42
+# suites 0
+# pass 42
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 204.401025

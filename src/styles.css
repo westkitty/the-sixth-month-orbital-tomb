@@ -1,0 +1,118 @@
+:root{font-family:'Arial Narrow','Aptos Narrow',Inter,Arial,sans-serif;color:#d8e2e9;background:#071019;font-synthesis:none;--edge:rgba(166,197,212,.22);--strong:#d9e9ee;--muted:#8da6b4;--amber:#d4b28d;--panel:rgba(10,19,27,.92)}
+*{box-sizing:border-box}html,body,#app{width:100%;height:100%;min-height:100%;margin:0;overflow:hidden}button,input,select{font:inherit}button{color:inherit;cursor:pointer;background:rgba(17,29,41,.86);border:1px solid var(--edge);min-height:35px;border-radius:2px;letter-spacing:.08em}button:hover{background:rgba(46,69,85,.92);border-color:rgba(202,225,237,.5)}button:active,button.selected,button[aria-pressed=true]{background:rgba(96,120,133,.32);border-color:#afc5ce;color:white}button:focus-visible,select:focus-visible,input:focus-visible,canvas:focus-visible{outline:2px solid #ffdfae;outline-offset:3px}input[type=range]{accent-color:#a1bfcd;cursor:pointer}select{appearance:none;background:rgba(17,29,41,.9);color:#dce7ec;border:1px solid var(--edge);padding:9px 13px;width:100%;border-radius:1px;min-height:40px}.experience{position:relative;isolation:isolate}#world{display:block;width:100%;height:100%;background:#02070c;touch-action:none}.hud{position:absolute;inset:0 0 auto 0;display:flex;align-items:flex-start;justify-content:space-between;gap:2rem;padding:24px 28px;pointer-events:none;z-index:4;background:linear-gradient(180deg,rgba(3,7,11,.66),transparent)}.hud>*{pointer-events:auto}.identity{display:flex;align-items:center;gap:12px;min-width:145px;padding-top:9px}.identity-rule{display:block;width:2px;height:22px;background:var(--amber)}.identity-name{font-size:15px;font-weight:800;letter-spacing:.28em}.identity-secondary{font-size:9px;letter-spacing:.19em;color:#89a4b1;opacity:.9}.status{display:flex;align-items:baseline;gap:13px;margin-top:-8px;white-space:nowrap}.status-kicker,.status-title{font-size:9px;letter-spacing:.2em;color:var(--muted)}.status-number{font-size:42px;font-weight:200;font-variant-numeric:tabular-nums;line-height:1}.status-title{color:#d3dfeb}.tools{display:flex;gap:7px}.tool{padding:0 10px;font-size:9px;font-weight:bold;min-height:34px}.environment-stamp{position:absolute;left:29px;top:78px;display:flex;align-items:center;gap:11px;color:#8c9ba5;font-size:9px;letter-spacing:.18em;pointer-events:none;z-index:2}.micro-rule{width:23px;height:1px;background:rgba(160,186,199,.4)}.timeline{position:absolute;left:50%;transform:translateX(-50%);bottom:23px;z-index:6;width:min(740px,calc(100% - 50px));padding:17px 22px 11px;background:linear-gradient(180deg,rgba(5,11,16,.81),rgba(7,14,19,.94));border:1px solid var(--edge);box-shadow:0 20px 50px rgba(0,0,0,.4);backdrop-filter:blur(10px)}.timeline-heading{display:flex;justify-content:space-between;gap:10px;font-size:9px;letter-spacing:.18em;color:#90a6b5}.timeline-heading strong{color:#f0dcc0;font-weight:600;white-space:nowrap}.timeline-controls{display:flex;align-items:center;gap:7px;margin-top:9px}.timeline-controls button{min-width:35px;font-size:11px;min-height:30px;background:rgba(23,35,43,.68)}.timeline-controls input{min-width:70px;flex:1;margin-left:12px}.timeline-ticks{display:flex;justify-content:space-between;padding-left:199px;color:#8296a6;font-size:9px;letter-spacing:.07em}.timeline-footnote{font-size:8px;color:#738795;letter-spacing:.07em;margin-top:9px}.quick-modes{position:absolute;bottom:159px;left:29px;display:flex;flex-direction:column;gap:6px;z-index:3}.quick-modes button{width:116px;min-height:31px;text-align:left;font-size:9px;padding-left:11px;border-left:2px solid rgba(166,197,212,.5)}.control-deck{position:absolute;right:18px;top:77px;bottom:165px;width:min(360px,calc(100vw - 36px));background:var(--panel);border:1px solid var(--edge);box-shadow:0 24px 90px rgba(0,0,0,.7);transform:translateX(calc(100% + 44px));transition:transform .25s ease;z-index:8;display:flex;flex-direction:column;backdrop-filter:blur(16px)}.control-deck.open{transform:none}.panel-top{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--edge);padding:11px 13px;font-size:10px;letter-spacing:.15em;font-weight:700}.panel-top button{min-height:26px;width:27px;border:none;background:transparent;font-size:12px}.panel-scroll{overflow:auto;scrollbar-width:thin;padding:0 16px 22px}.control-group{border-bottom:1px solid rgba(189,207,216,.14);padding:16px 0 17px}.control-group h2{margin:0 0 13px;font-size:10px;font-weight:600;color:var(--amber);letter-spacing:.2em}.control-group label{display:block;font-size:11px;letter-spacing:.02em;color:#afc5cd;margin:9px 0 7px}.control-group input[type=range]{width:100%}.mode-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:9px}.mode-grid.trio{grid-template-columns:repeat(3,1fr)}.mode-grid button{min-height:34px;font-size:9px;padding:4px 5px}.pair{display:flex;gap:6px;margin-top:8px}.pair button{flex:1;font-size:9px;padding:5px 7px}.full{width:100%;margin-top:10px;font-size:10px}.range-line{display:flex;align-items:center;justify-content:space-between;gap:7px}.range-line label{margin:10px 0 4px}.numeric{font-size:9px;color:var(--amber)}.check{display:flex!important;gap:8px;align-items:center;font-size:11px!important;margin:11px 0!important}.check input{accent-color:#a7c6d5}.instrument-readout{white-space:pre-line;font-size:10px;line-height:1.5;color:#8598a5;margin:9px 0 0}.touch-pad{display:none}.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.modal[hidden],.intro[hidden],#unsupported[hidden]{display:none!important}.modal{position:absolute;inset:0;z-index:20;background:rgba(1,7,12,.72);display:grid;place-items:center;padding:16px}.modal-sheet{max-width:640px;background:#0d1922;color:#e7edf1;border:1px solid #566a76;padding:28px 34px;max-height:90vh;overflow:auto;box-shadow:0 35px 90px black;position:relative}.modal-sheet h2{font-size:24px;font-weight:300;letter-spacing:.04em}.modal-sheet p{color:#a9bac4;font-size:13px;line-height:1.6}.modal-sheet #help-close{position:absolute;right:10px;top:10px;border:none;background:transparent}.intro{position:absolute;inset:0;z-index:30;display:flex;align-items:center;background:radial-gradient(ellipse at 68% 40%,rgba(20,45,60,.30),transparent 58%),linear-gradient(90deg,rgba(2,7,12,.97) 10%,rgba(2,8,14,.73) 55%,rgba(1,6,10,.08) 100%)}.intro-content{margin-left:clamp(32px,10vw,170px);max-width:560px;padding:25px 20px 25px 0}.intro-rule{width:44px;height:2px;background:#b6a187;margin-bottom:24px}.kicker{font-size:10px;letter-spacing:.27em;color:#aab9c0}.intro h1{font-size:clamp(64px,10vw,130px);line-height:.85;letter-spacing:.045em;font-weight:200;color:#e3ecf0;margin:36px 0 25px}.intro p{font-size:17px;color:#b3c0c7;font-weight:300;letter-spacing:.06em}.intro button{font-size:11px;border:1px solid #91a1ab;min-height:46px;padding:0 22px;margin-top:32px;background:rgba(20,36,44,.72)}.intro button span{margin-left:28px;font-size:17px}.intro-note{display:block;color:#758c96;font-size:10px;letter-spacing:.12em;margin-top:23px}.cinematic .hud,.cinematic .environment-stamp,.cinematic .timeline,.cinematic .control-deck,.cinematic .quick-modes,.cinematic .touch-pad{display:none!important}.high-contrast{--edge:rgba(240,244,247,.75);--muted:#e2e7ec;--panel:rgba(0,0,0,.97)}.reduce-motion .control-deck{transition:none}.reduce-motion *{scroll-behavior:auto!important;animation:none!important;transition-duration:0ms!important}#unsupported{position:absolute;inset:0;z-index:100;background:#111b23;color:#f9d4c2;padding:30px;font-size:18px}
+@media(max-width:900px){.hud{padding:14px 15px;gap:10px}.identity-secondary{display:none}.status-kicker,.status-title{display:none}.status-number{font-size:29px}.environment-stamp{top:56px;left:16px}.timeline{width:calc(100% - 18px);bottom:8px;padding:9px 10px 7px}.timeline-heading{font-size:8px}.timeline-controls button{min-width:29px;min-height:34px}.timeline-ticks{padding-left:171px}.timeline-footnote{display:none}.control-deck{right:8px;top:58px;bottom:128px}.quick-modes{bottom:137px;left:8px;flex-direction:row;gap:3px}.quick-modes button{font-size:8px;width:auto;min-height:29px;padding:3px 7px}.intro-content{margin-left:30px}.touch-pad{position:absolute;bottom:176px;right:9px;z-index:4;display:flex;align-items:flex-end;gap:10px;opacity:.7}.touch-cross{display:flex;flex-direction:column;align-items:center}.touch-cross>button{width:46px}.touch-cross>div{display:flex}.touch-cross>div button{min-width:46px}.touch-vertical{display:flex;flex-direction:column;gap:5px}.touch-vertical button{font-size:9px;min-width:48px}.touch-pad button{touch-action:none;user-select:none}.touch-pad button.active{background:#728a9b;opacity:1}}
+@media(max-width:520px){.identity-name{font-size:11px}.status-number{font-size:23px}.tools{gap:3px}.tool{padding:0 7px}.timeline-heading span{max-width:185px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.timeline-controls{gap:2px}.timeline-controls input{margin-left:3px}.timeline-ticks{padding-left:143px}.quick-modes{max-width:100%;overflow-x:auto}.quick-modes button{white-space:nowrap}.touch-pad{bottom:177px}.intro h1{font-size:66px}}
+
+/* Ordered reconstruction index: quiet industrial rows, never an exhibition panel. */
+.departure-history{border-top:1px solid rgba(166,186,196,.16);padding-top:10px;margin-top:12px;}
+.departure-history summary{cursor:pointer;font:600 11px/1.4 ui-monospace,monospace;letter-spacing:.075em;color:#aec4d2;outline-offset:4px;}
+.departure-phase{padding:9px 0;border-bottom:1px solid rgba(166,186,196,.1);}
+.departure-phase strong{display:block;font:500 9px/1.5 ui-monospace,monospace;color:#b69b7c;letter-spacing:.12em;margin-bottom:5px;}
+.departure-row{display:block;width:100%;margin:3px 0;text-align:left;padding:6px 8px;background:rgba(151,178,195,.04);border:1px solid rgba(151,178,195,.12);color:#d0d7de;font:11px/1.4 ui-monospace,monospace;cursor:pointer;}
+.departure-row:hover,.departure-row:focus-visible{border-color:#b89a75;background:rgba(184,154,117,.09);}
+.departure-history p{font-size:11px;color:#94a2af;}
+
+/* R11 one-step player direction. It is game navigation, not a lore webpage. */
+.guide{position:absolute;left:clamp(16px,3vw,50px);top:112px;z-index:6;width:min(345px,calc(100vw - 32px));pointer-events:auto;
+ padding:14px 17px 15px;background:linear-gradient(128deg,rgba(8,22,30,.94),rgba(8,19,28,.75));border:1px solid rgba(194,165,122,.49);border-left:2px solid #d2ac79;box-shadow:0 20px 45px rgba(0,0,0,.28)}
+.guide-head{display:flex;align-items:center;justify-content:space-between;color:#debd88;letter-spacing:.14em;font:700 10px ui-monospace,monospace}
+.guide-head button{border:0;background:transparent;min-height:25px;min-width:25px;font-size:20px;padding:0}
+.guide h2{font:500 17px/1.28 ui-monospace,monospace;color:#edf3f1;margin:11px 0 7px}
+.guide p{font:12px/1.5 ui-monospace,monospace;color:#b8c9d0;margin:0 0 11px}
+#guide-action{min-height:35px;padding:7px 12px;font:700 10px ui-monospace,monospace;color:#fff1d7;border-color:#c1a178}
+.guide-show{position:absolute;top:109px;left:clamp(16px,3vw,50px);z-index:6;padding:6px 12px;color:#f3d7ac;border-color:#c1a178;font:700 10px ui-monospace,monospace}
+.guide[hidden],.guide-show[hidden]{display:none!important}.cinematic .guide,.cinematic .guide-show{display:none!important}
+.intro .intro-steps{font:700 12px/1.6 ui-monospace,monospace;color:#f3d7ac;letter-spacing:.1em}
+.intro .resume-intro{display:block;margin-top:8px;padding:0 14px;border-color:#617683;color:#bfd1db;font-size:10px}
+.intro .resume-intro[hidden]{display:none!important}
+@media(max-width:900px){.guide{top:74px;left:12px;padding:9px 12px;width:min(280px,calc(100vw - 130px))}.guide h2{font-size:13px;margin:6px 0}.guide p{font-size:10px;line-height:1.35;margin-bottom:6px}.guide-show{top:74px;left:10px}}
+@media(max-width:520px){.guide{top:78px;left:7px;width:min(250px,calc(100vw - 110px));padding:7px 9px}.guide h2{font-size:12px}.guide p{font-size:9px}#guide-action{font-size:9px;min-height:29px}}
+
+/* R3 cinematic inspection: speed and event-follow tools remain visible at gameplay size. */
+.timeline-controls{gap:5px}.timeline-controls .time-speed-label{font:700 9px/1.2 ui-monospace,monospace;color:#dfbe96;letter-spacing:.09em;margin-left:6px}.timeline-controls #speed{width:76px;min-width:76px;min-height:30px;padding:3px 6px;font:700 11px ui-monospace,monospace;background:#152c36;border-color:#678593;color:#fff}.timeline-controls input#time{margin-left:7px}.watch-strip{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:9px}.watch-strip button{min-height:30px;padding:4px 12px;border-color:rgba(224,171,101,.60);color:#f7d6a0;font:700 10px ui-monospace,monospace;letter-spacing:.09em}.watch-strip #playback-state,.watch-strip #collision-state{font:9px ui-monospace,monospace;color:#aac7d8;letter-spacing:.055em}.watch-strip #collision-state{color:#a4c29f}.hud #bright-toggle{border-color:rgba(242,195,124,.6);color:#ffdeb1}.watch-strip button[aria-pressed=true]{color:#fff;background:rgba(187,117,54,.42);border-color:#eac08c}
+@media(max-width:900px){.timeline{bottom:5px}.quick-modes{bottom:177px}.touch-pad{bottom:215px}.watch-strip #collision-state{display:none}.timeline-controls #speed{min-width:65px;width:65px}.timeline-ticks{padding-left:165px}}
+@media(max-width:520px){.timeline-controls button{min-width:25px}.timeline-controls #speed{min-width:54px;width:54px;font-size:10px}.time-speed-label{display:none}.timeline-ticks{padding-left:120px}.watch-strip button{font-size:9px;padding:4px 7px}.quick-modes{bottom:165px}.touch-pad{bottom:208px}.hud #bright-toggle{font-size:8px}}
+
+/* R5: displacement is a selected-structure survey aid, not a second navigation rail. */
+#displacement-toggle[aria-pressed="true"]{border-color:#dbbc87;color:#f3dcc0;background:rgba(154,117,69,.17)}
+#displacement-readout{font-size:10px;line-height:1.5;color:#b8b5ad}
+
+/* R4: a low-level instrument is discoverable only near actual structural evidence.
+   It is deliberately absent from the pure Month Six image when the interface is hidden. */
+.scan-instrument{position:absolute;left:clamp(14px,3vw,54px);bottom:180px;z-index:7;max-width:min(410px,calc(100vw - 28px));pointer-events:none;font-family:ui-monospace,monospace}
+.scan-instrument button,.scan-reading{pointer-events:auto}
+#scan-now{display:block;padding:9px 12px;max-width:100%;color:#dfc29b;background:rgba(10,24,31,.85);border:1px solid rgba(206,171,122,.55);font:700 10px/1.45 ui-monospace,monospace;letter-spacing:.065em;text-align:left;cursor:pointer}
+#scan-now[hidden],#scan-reading[hidden]{display:none!important}
+#scan-now:hover,#scan-now:focus-visible{background:#28404c;border-color:#ffdda3;outline:2px solid #d8af76;outline-offset:3px}
+.scan-reading{position:relative;margin-top:7px;width:min(405px,calc(100vw - 28px));max-height:42vh;overflow-y:auto;background:rgba(8,21,29,.97);border:1px solid #6c8291;border-left:3px solid #cca975;padding:16px 18px 14px;box-shadow:0 13px 55px rgba(0,0,0,.40)}
+.scan-serial{display:flex;align-items:center;justify-content:space-between;gap:10px;font:700 9px ui-monospace,monospace;letter-spacing:.15em;color:#d0ae83}
+.scan-serial button{background:transparent;color:#d6dfe4;border:1px solid #5c7582;min-height:30px;min-width:30px;font-size:17px}
+.scan-reading h2{font:500 16px/1.3 ui-monospace,monospace;letter-spacing:.06em;margin:13px 0 8px;color:#edf0ea}
+.scan-reading p{font:12px/1.65 ui-monospace,monospace;color:#c2d0d6;margin:7px 0}
+.scan-reading .scan-implication{border-left:1px solid #916c44;color:#f0d0a4;padding-left:12px;margin-top:12px}
+.scan-reading small{display:block;margin-top:13px;font:9px/1.5 ui-monospace,monospace;letter-spacing:.09em;color:#8ba0a9}
+.cinematic .scan-instrument{display:none!important}
+.watch-strip #station-census{font:700 9px/1.2 ui-monospace,monospace;letter-spacing:.07em;color:#d1b187}
+@media(max-width:900px){.scan-instrument{left:9px;bottom:245px}.scan-reading{max-height:36vh}.watch-strip #station-census{display:none}}
+@media(max-width:520px){.scan-instrument{bottom:243px}.scan-reading{max-height:31vh}.scan-reading p{font-size:11px}}
+
+/* R6: source-derived cut navigator. These are instruments, not lore cards. */
+.watch-strip #cut-prev,.watch-strip #cut-next{border:1px solid #7d7565;background:rgba(31,35,39,.78);color:#e0c398;letter-spacing:.09em;white-space:nowrap;min-height:30px;cursor:pointer}
+.watch-strip #cut-prev:hover,.watch-strip #cut-next:hover,.watch-strip #cut-prev:focus-visible,.watch-strip #cut-next:focus-visible{background:#39454d;color:#fff1d3;outline:2px solid #ead2a3;outline-offset:2px}
+@media(max-width:900px){.watch-strip #cut-prev,.watch-strip #cut-next{font-size:9px;padding:6px 7px}}
+@media(max-width:520px){.watch-strip{flex-wrap:wrap}.watch-strip #cut-prev,.watch-strip #cut-next{flex:1 0 auto;min-width:76px}}
+
+.watch-strip #witness-status:not([hidden]){font:700 9px/1.4 ui-monospace,monospace;letter-spacing:.07em;color:#efd09b;border-left:1px solid #887663;padding:4px 7px;background:rgba(38,31,23,.60)}
+
+/* R10 investigation is optional and inside the existing instrument deck. */
+#inquiry-submit:disabled{opacity:.38;cursor:not-allowed;border-color:#4b5960}
+#inquiry-evidence{color:#d9b888}#inquiry-result{color:#e2e8df;border-left:2px solid #a78b61;padding-left:9px}
+#provenance-legend{color:#c8bda7;border-left:2px solid #c5a16f;padding-left:8px}
+.earned-absence{position:absolute;top:16%;left:50%;transform:translateX(-50%);z-index:5;max-width:min(560px,90vw);padding:12px 18px;background:rgba(5,10,16,.62);border-top:1px solid #baa17a;text-align:center;color:#e2c89e;font:11px/1.6 ui-monospace,monospace;letter-spacing:.09em;pointer-events:none}
+.earned-absence[hidden]{display:none!important}
+.cinematic .earned-absence{display:none!important}
+#quiet-intro{display:block;margin-top:10px;padding:12px 15px;background:transparent;border-color:rgba(196,178,151,.25);font-size:10px;letter-spacing:.1em;color:#bdced7}
+#quality-readout{color:#87b1bf}
+@media(max-width:700px){.earned-absence{top:13%;font-size:10px;padding:9px 10px}}
+
+/* Nonphysical camera-only viewport crossing: shade the glass intersection, not player movement. */
+.scale-shutter{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:0;background:radial-gradient(ellipse at 50% 48%,#060c13 0%,#02060b 85%);will-change:opacity}
+
+.guide .crew-status{padding-top:9px;margin:3px 0 0;border-top:1px solid rgba(173,197,204,.22);font-size:9px;letter-spacing:.07em;color:#92b5bc}
+
+/* R12 / MONUMENTAL INDUSTRIAL ELEGY — readable, diegetic instruments.
+   No extra layer or animated compositor surface: ordinary DOM and CSS only. */
+:root{--edge:rgba(186,196,192,.27);--strong:#f0f0e8;--muted:#a7b8bc;--amber:#ddbd8d;--panel:rgba(8,17,24,.96)}
+.intro{background:linear-gradient(90deg,rgba(2,6,11,.96) 0%,rgba(3,10,16,.84) 37%,rgba(4,14,21,.48) 68%,rgba(2,6,11,.10) 100%)}
+.intro-content{border-left:1px solid rgba(199,158,104,.5);padding-left:clamp(22px,3vw,42px);max-width:min(620px,85vw)}
+.intro h1{font-weight:300;letter-spacing:.075em;color:#f2f1e9;text-shadow:0 7px 35px rgba(0,0,0,.4)}
+.intro-content>.kicker{color:#e4c29a;font-weight:700}
+.intro .intro-steps{font-size:11px;letter-spacing:.13em;color:#ffdeb0;border-top:1px solid rgba(219,186,137,.24);padding-top:13px}
+.intro button#dismiss-intro{color:#fff2d9;border-color:#d2b082;background:linear-gradient(90deg,rgba(94,65,38,.8),rgba(32,42,46,.82));font-weight:700;letter-spacing:.075em;box-shadow:0 8px 28px rgba(0,0,0,.30)}
+.intro button#dismiss-intro:hover,.intro button#dismiss-intro:focus-visible{background:#74583b;border-color:#ffe4bc;outline:2px solid #f2d7a8;outline-offset:3px}
+.intro-note{max-width:525px;line-height:1.55;letter-spacing:.06em;color:#a4afb1}
+.guide{border-left:3px solid #e0b679;border-top-color:rgba(235,204,153,.65);background:linear-gradient(135deg,rgba(7,17,24,.96),rgba(18,32,38,.91));box-shadow:0 12px 38px rgba(0,0,0,.38);backdrop-filter:blur(5px)}
+.guide-head{color:#f3d5a4}.guide h2{font-size:18px;color:#fff4df;letter-spacing:.01em;font-weight:600}.guide p{font-size:12px;line-height:1.62;color:#c7d5d7}
+#guide-action{min-height:39px;background:rgba(116,83,48,.38);color:#fff0d4;font-weight:800;letter-spacing:.075em}
+#guide-action:hover,#guide-action:focus-visible{border-color:#f5d4a6;background:rgba(129,90,47,.63)}
+.timeline{background:linear-gradient(170deg,rgba(7,16,22,.91),rgba(9,18,22,.98));border-top:1px solid rgba(231,188,130,.58)}
+.timeline-heading strong{color:#f1d7ac}
+.quick-modes button[aria-pressed=true],.mode-grid button[aria-pressed=true]{background:rgba(113,83,52,.48);border-color:#dfb67e;color:#fff4e5}
+.control-deck{background:rgba(7,17,24,.975);border-top:2px solid #ac8c63}
+.control-group h2{color:#e7c396}
+button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid #f1ca93;outline-offset:3px}
+#quality-preset{color:#e1e9e6}
+.absence-visited .earned-absence{background:rgba(5,9,13,.78);border-top:1px solid #ead1a1;box-shadow:0 8px 34px rgba(0,0,0,.4)}
+@media (prefers-reduced-motion:reduce){.control-deck,.guide,.timeline,button,.intro,.scale-shutter{transition:none!important;animation:none!important}}
+@media(max-width:700px){.intro-content{margin-left:clamp(10px,4vw,20px);padding-left:18px;padding-right:12px;max-width:calc(100vw - 24px)}.intro h1{font-size:clamp(47px,12vw,76px)}.guide{backdrop-filter:none}.timeline{backdrop-filter:none}}
+
+/* R13: a visible current action, never an invented in-world archival message. */
+.visitor-mission{position:absolute;left:50%;top:7.1rem;transform:translateX(-50%);z-index:9;display:flex;align-items:center;gap:1rem;max-width:min(780px,calc(100vw - 2rem));width:max-content;min-width:min(580px,calc(100vw - 2rem));padding:.68rem .88rem;background:rgba(7,14,19,.91);border:1px solid rgba(227,186,122,.38);backdrop-filter:blur(9px);box-shadow:0 8px 35px #0007;pointer-events:auto}
+.visitor-mission div{flex:1;min-width:0}.visitor-mission strong{font-size:.8rem;letter-spacing:.095em;color:#eed5b0}.visitor-mission p{font-size:.72rem;line-height:1.38;margin:.18rem 0 0;color:#bbcccd}.mission-step{font-size:.6rem;letter-spacing:.12em;color:#c2a67b;white-space:nowrap}.visitor-mission button{border:1px solid #b9a17b;background:#15232a;color:#f4e6ce;padding:.55rem .65rem;font-size:.66rem;letter-spacing:.08em;min-width:95px;min-height:38px;cursor:pointer}
+.visitor-mission button:focus-visible,.visitor-mission button:hover{outline:2px solid #e9c487;outline-offset:2px;background:#28414c}
+.intro-resume-summary{max-width:43ch;color:#c4d4d7;font-size:.78rem;border-left:2px solid #d0aa75;padding:.5rem .85rem}
+.cut-phase,.room-state{position:absolute;right:1rem;z-index:7;padding:.28rem .6rem;border-left:2px solid #b99868;background:#061015c9;font-size:.64rem;letter-spacing:.06em;pointer-events:none;max-width:33vw}
+.cut-phase{top:27%}.room-state{top:31%;color:#cbd4d0}
+.cinematic .visitor-mission,.cinematic .cut-phase,.cinematic .room-state{display:none!important}
+@media(max-width:780px){.visitor-mission{top:4.2rem;left:.5rem;transform:none;width:calc(100% - 1rem);min-width:0;padding:.48rem;gap:.45rem}.visitor-mission p{font-size:.68rem}.mission-step{display:none}.visitor-mission button{min-width:75px;padding:.38rem}.cut-phase,.room-state{display:none}}
+@media(prefers-reduced-motion:reduce){.visitor-mission,.visitor-mission button{transition:none!important}}

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#080f16" />
+  <meta name="description" content="The Sixth Month: a spatial-memory exploration of Meridian Station above Virgil." />
+  <title>THE SIXTH MONTH - Meridian Station</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20fill%3D'%2302060b'%2F%3E%3Ccircle%20cx%3D'32'%20cy%3D'32'%20r%3D'19'%20fill%3D'none'%20stroke%3D'%23cfe3ed'%20stroke-width%3D'3'%2F%3E%3Cpath%20d%3D'M32%205V59M5%2032H59'%20fill%3D'none'%20stroke%3D'%237392a8'%20stroke-width%3D'2'%2F%3E%3Ccircle%20cx%3D'32'%20cy%3D'32'%20r%3D'5'%20fill%3D'%23cfe3ed'%2F%3E%3C%2Fsvg%3E" />
+</head>
+<body>
+  <div id="app" class="experience">
+    <canvas id="world" tabindex="0" aria-label="Three-dimensional orbital exploration of Meridian Station; use keyboard controls or the timeline and camera controls"></canvas>
+    <div id="scale-shutter" class="scale-shutter" aria-hidden="true"></div>
+    <div id="unsupported" hidden role="alert"></div>
+    <header id="hud" class="hud" aria-label="Current world state">
+      <div class="identity"><span class="identity-rule"></span><span class="identity-name">MERIDIAN</span><span class="identity-secondary">VIRGIL ORBIT</span></div>
+      <div class="status"><span class="status-kicker">TEMPORAL STATE</span><span class="status-number" id="month-number">00</span><span class="status-title" id="month-title">INTACT</span></div>
+      <div class="tools">
+        <button id="help-toggle" type="button" class="tool" aria-label="Show controls and accessibility help" title="Controls">?</button>
+        <button id="cinematic" type="button" class="tool" aria-pressed="false" title="Hide every overlay (H)">HIDE</button>
+        <button id="bright-toggle" type="button" class="tool" title="Boost visibility (L)">BRIGHTEN</button>
+        <button id="menu-toggle" type="button" class="tool menu-button" aria-expanded="false" aria-controls="control-deck">CONTROLS <span aria-hidden="true">+</span></button>
+      </div>
+    </header>
+    <div class="environment-stamp" id="environment-stamp" aria-hidden="true"><span id="mode-label">WALK MODE</span><span class="micro-rule"></span><span id="weather-state">VACUUM</span></div>
+    <section id="visitor-mission" class="visitor-mission" aria-label="Current exploration objective" aria-live="polite">
+      <span id="mission-step" class="mission-step">SURVEY 01 / 06</span>
+      <div><strong id="mission-title">LEARN THE ROOM</strong><p id="mission-text">Walk with WASD and approach the amber survey fixture.</p></div>
+      <button id="mission-action" type="button">SHOW ME</button>
+    </section>
+    <section id="guide" class="guide" aria-labelledby="guide-title" aria-live="off">
+      <div class="guide-head"><span id="guide-step">01 / 06</span><button id="guide-dismiss" type="button" aria-label="Hide guidance">×</button></div>
+      <h2 id="guide-title">Walk through Meridian</h2><p id="guide-body">WASD moves. Click the world to look around.</p>
+      <p id="crew-status" class="crew-status">MODELED OCCUPANTS / LOADING LOCAL ASSETS</p>
+      <button id="guide-action" type="button">VIEW WALK CONTROLS</button>
+    </section>
+    <button id="guide-show" class="guide-show" type="button" hidden>WHAT NEXT?</button>
+    <div class="scan-instrument" aria-label="Local structural inspection">
+      <button id="scan-now" type="button" hidden title="Inspect physical or absent structure (I)"></button>
+      <section id="scan-reading" class="scan-reading" hidden aria-label="Recovered structural evidence">
+        <div class="scan-serial"><span>GEOMETRY / LOCAL READ</span><button id="scan-close" type="button" aria-label="Close evidence">×</button></div>
+        <h2 id="scan-title"></h2>
+        <p id="scan-body"></p>
+        <p id="scan-implication" class="scan-implication"></p>
+        <small id="scan-source"></small>
+      </section>
+    </div>
+    <section class="timeline" aria-label="Six-month temporal controls">
+      <div class="timeline-heading"><span>DISASSEMBLY / RECONSTRUCTED CHECKPOINTS</span><strong id="time-text">MONTH 0 / 06</strong></div>
+      <div class="timeline-controls">
+        <button id="reverse" type="button" aria-label="Play timeline backward" title="Reverse">&#9664;&#9664;</button>
+        <button id="step-back" type="button" aria-label="Previous month" title="Previous month">&#9664;</button>
+        <button id="pause" type="button" aria-label="Pause timeline" title="Pause">&#8545;</button>
+        <button id="forward" type="button" aria-label="Play timeline forward" title="Play">&#9654;</button>
+        <button id="step-forward" type="button" aria-label="Next month" title="Next month">&#9654;&#9654;</button>
+        <label for="speed" class="time-speed-label">SPEED</label><select id="speed" aria-label="Playback speed"><option value="0.1">0.1x</option><option value="0.25">0.25x</option><option value="0.5">0.5x</option><option value="1" selected>1x</option><option value="2">2x</option><option value="4">4x</option><option value="8">8x</option><option value="16">16x</option></select>
+        <input id="time" type="range" min="0" max="6" step="0.005" value="0" aria-label="Timeline month, 0 through 6" />
+      </div>
+      <div class="watch-strip"><button id="cut-prev" type="button" title="Witness the previous modeled separation window (,)" aria-label="Witness previous separation window">◀ PREV CUT</button><button id="cut-next" type="button" title="Witness the next modeled separation window (.)" aria-label="Witness next separation window">NEXT CUT ▶</button><button id="watch" type="button" aria-pressed="false">WATCH SEPARATIONS</button><span id="playback-state">PAUSED / 1x</span><span id="collision-state">SOLID COLLISION ON</span><span id="station-census" aria-live="off">STRUCTURE IN PLACE</span><span id="witness-status" hidden></span></div>
+      <div class="timeline-ticks" aria-hidden="true"><span>00</span><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span></div>
+      <div class="timeline-footnote">Exact historical month assignments are provisional. The order of dismantling follows known source material.</div>
+    </section>
+    <aside class="control-deck" id="control-deck" aria-label="Exploration instruments">
+      <div class="panel-top"><span>EXPLORATION INSTRUMENTS</span><button id="menu-close" type="button" class="close-menu" aria-label="Close instruments">&#10005;</button></div>
+      <div class="panel-scroll">
+        <section class="control-group"><h2>01 / POSITION</h2>
+          <label for="camera-mode">Camera and traversal</label>
+          <select id="camera-mode"><option value="walk">Walk surviving interior</option><option value="float">Six-axis free float</option><option value="wide">Wide orbital camera</option><option value="former">Original observation coordinates</option><option value="atmosphere">Virgil atmospheric probe</option></select>
+          <div class="mode-grid"><button data-mode="walk" type="button">WALK</button><button data-mode="float" type="button">FLOAT</button><button data-mode="wide" type="button">ORBIT</button><button data-mode="former" type="button">THE ROOM</button><button data-mode="atmosphere" type="button">VIRGIL</button></div>
+          <div class="pair"><button id="anchor" type="button">ANCHOR / RELEASE</button><button id="rescue" type="button">RECOVER POSITION</button></div>
+          <button id="scale-reveal" type="button" class="full">FROM THIS ROOM TO ORBIT / SCALE REVEAL</button>
+          <p class="instrument-readout" id="anchor-name">No valid anchor</p>
+          <label class="check"><input type="checkbox" id="brake" checked /> Assisted braking in free float</label>
+        </section>
+        <section class="control-group"><h2>02 / STRUCTURAL MEMORY</h2>
+          <div class="mode-grid trio"><button id="ghost-toggle" type="button" aria-pressed="false">ORIGINAL</button><button id="compare-toggle" type="button" aria-pressed="false">COMPARE</button><button id="trace-toggle" type="button" aria-pressed="false">MY ROUTE</button></div>
+          <div class="range-line"><label for="compare-month">Comparison month</label><input id="compare-month" type="range" min="0" max="6" step="1" value="0" /></div>
+          <div class="range-line"><label for="compare-opacity">Trace opacity</label><input id="compare-opacity" type="range" min="0.05" max="0.75" step="0.01" value="0.23" /></div>
+          <button id="compare-focus" type="button" aria-pressed="false" aria-describedby="compare-focus-note" class="full">ISOLATE SELECTED COMPARISON</button>
+          <p id="compare-focus-note" class="instrument-readout">Compare one tracked structural mesh instead of overlaying the entire modeled station. Select a piece under Structural Tracking, then use the comparison month slider. The overlay is reconstructive, not historical footage.</p>
+          <div class="pair"><button id="replay-route" type="button">REPLAY MY PATH</button><button id="reset-route" type="button">ARCHIVE THIS PATH</button></div>
+          <button id="reset" type="button" class="full">RETURN TO MONTH ZERO</button>
+        </section>
+        <section class="control-group"><h2>03 / STRUCTURAL TRACKING</h2>
+          <label for="track">Stable structural identifier</label><select id="track"><option value="">No component selected</option></select>
+          <p id="selected-info" class="instrument-readout">Select a structure in orbit or from the tracker.</p>
+          <button id="follow" type="button" aria-pressed="false" class="full">FOLLOW SELECTED STRUCTURE</button>
+          <button id="displacement-toggle" type="button" aria-pressed="false" class="full">K / TRACE DISPLACEMENT</button>
+          <p id="displacement-readout" class="instrument-readout">Select an actual structure to compare its two coordinates.</p>
+          <button id="provenance-toggle" type="button" class="full" aria-pressed="false">REVEAL SOURCE CLASSIFICATION</button>
+          <p id="provenance-legend" class="instrument-readout" hidden>AMBER / SOURCE ORDER · CYAN / VISUAL REFERENCE · GREY / RECONSTRUCTION. MARKERS ARE ANALYST OVERLAYS, NOT PHYSICAL OBJECTS.</p>
+          <p id="services-readout" class="instrument-readout">STRUCTURAL SERVICES / RECONSTRUCTED</p>
+          <details class="departure-history"><summary>ORDERED DEPARTURE INDEX</summary><div id="departure-index"></div><p>Source-family ordering is retained. Exact checkpoint assignments remain reconstructions.</p></details>
+        </section>
+        <section class="control-group"><h2>04 / EVIDENCE RELATIONSHIPS</h2>
+          <p id="inquiry-progress" class="instrument-readout">0 / 3 RELATIONSHIPS ESTABLISHED</p>
+          <label for="inquiry-case">Choose a source-bounded question</label><select id="inquiry-case"></select>
+          <p id="inquiry-question" class="instrument-readout"></p>
+          <label for="inquiry-choice">What does the evidence support?</label><select id="inquiry-choice"></select>
+          <p id="inquiry-evidence" class="instrument-readout">Inspect physical evidence before inferring.</p>
+          <button id="inquiry-submit" type="button" class="full">TEST INFERENCE</button>
+          <button id="inquiry-link" type="button" class="full" disabled>LINK OBSERVED PHYSICAL EVIDENCE</button>
+          <p id="inquiry-link-status" class="instrument-readout">The relationship is available only after real inspection.</p>
+          <p id="inquiry-result" class="instrument-readout" role="status" aria-live="polite"></p>
+        </section>
+        <section class="control-group"><h2>05 / LIGHT &amp; ATMOSPHERE</h2>
+          <div class="range-line"><label for="visibility">Scene visibility / inspection lamps</label><span id="visibility-text" class="numeric">1.55x</span></div><input id="visibility" type="range" min="0.5" max="3" step="0.05" value="1.55" />
+          <p class="instrument-readout">Lighting illuminates actual geometry. Use BRIGHTEN or L when details are hard to see. Exterior disassembly remains visible from orbit.</p>
+          <div class="range-line"><label for="lighting">Presentation lighting</label><span id="lighting-text" class="numeric">07.0 / 24</span></div><input id="lighting" type="range" min="0" max="24" step="0.1" value="7" />
+          <label for="weather">Simulated Virgil observation profile</label>
+          <select id="weather"><option value="clear">Clear cloud-band visibility</option><option value="cloudy">Dense cloud structure</option><option value="rain">Hypothetical condensate fall</option><option value="thunderstorm">Hypothetical convective storm</option><option value="snow">Hypothetical crystalline precipitation</option><option value="fog">Atmospheric aerosol and haze</option></select>
+          <p class="instrument-readout">Weather exists only inside the gas giant's simulated atmospheric probe. Exterior vacuum has none.</p>
+        </section>
+        <section class="control-group"><h2>05 / ACCESSIBILITY</h2>
+          <div class="range-line"><label for="effects">Visual effect intensity</label></div><input id="effects" type="range" min="0" max="1" step="0.05" value="0.75" />
+          <label class="check"><input type="checkbox" id="reduced-motion" /> Reduced motion and steady framing</label>
+          <label class="check"><input type="checkbox" id="contrast" /> High contrast instrumentation</label>
+          <label class="check"><input type="checkbox" id="sound" /> Industrial hum / contact sound</label>
+          <label class="check"><input type="checkbox" id="paced-witness" /> Slow witness: hold before cuts and aftermath</label>
+          <label class="check"><input type="checkbox" id="auto-quality" checked /> Adaptive render quality (hysteresis)</label>
+          <label for="quality-preset">Renderer quality tier</label>
+          <select id="quality-preset" aria-label="Renderer quality tier"><option value="economy">ECONOMY / 1x</option><option value="normal" selected>STANDARD / up to 1.5x</option><option value="high">HIGH / up to 2x</option></select>
+          <p id="quality-readout" class="instrument-readout">RENDER / NORMAL</p>
+        </section>
+      </div>
+    </aside>
+    <div class="quick-modes" aria-label="Camera shortcuts">
+      <button type="button" data-mode="walk" title="Walk the station">WALK</button>
+      <button type="button" data-mode="float" title="Free float">FLOAT</button>
+      <button type="button" data-mode="wide" title="Wide orbital view">ORBIT</button>
+      <button type="button" data-mode="former" title="Return to the original observation coordinates in this month">FORMER ROOM</button>
+    </div>
+    <div id="touch-pad" class="touch-pad" aria-label="Touch movement controls">
+      <div class="touch-cross"><button data-touch="up" type="button" aria-label="Move forward">&#9650;</button><div><button data-touch="left" type="button" aria-label="Move left">&#9664;</button><button data-touch="down" type="button" aria-label="Move backward">&#9660;</button><button data-touch="right" type="button" aria-label="Move right">&#9654;</button></div></div>
+      <div class="touch-vertical"><button data-touch="rise" type="button" aria-label="Rise in free float">RISE</button><button data-touch="descend" type="button" aria-label="Descend in free float">SINK</button></div>
+    </div>
+    <div id="earned-absence" class="earned-absence" hidden role="status" aria-live="polite"></div>
+    <div id="cut-phase" class="cut-phase" hidden aria-live="off"></div>
+    <div id="room-state" class="room-state" hidden aria-live="off"></div>
+    <div id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+    <div id="help" class="modal" role="dialog" aria-modal="true" aria-label="Controls and interpretation" hidden>
+      <div class="modal-sheet"><button id="help-close" type="button" aria-label="Close help">&#10005;</button>
+        <div class="kicker">PILOT INSTRUCTIONS</div><h2>No floor survives every month.</h2>
+        <p>WASD moves; mouse looks around after clicking the world. Shift moves faster. In free float use Q/E to rise/sink, Z/C to roll, and B to toggle braking. Mouse wheel adjusts orbital distance.</p>
+        <p>1 Walk, 2 Float, 3 Orbit, 4 Return to the original observation coordinates, 5 Virgil atmospheric probe. G shows original structural geometry, T traces your path, V compares temporal states, F anchors, R recovers, K traces the reconstructed distance from a selected structure's original position to its current position. Y toggles in-world amber/cyan/grey provenance markers. In the instruments, test three evidence relationships after inspecting the required physical locations, ride a room-to-orbit scale transition, or opt into paced witness holds. The entry screen also offers an instrument-free beginning; H restores controls. Adaptive rendering quality can be disabled. All these tools are reconstructions, not recovered crew equipment. Comma and period witness the previous or next modeled separation window at 0.5x and pause automatically near its joint. [ and ] step months. Space pauses or plays, - / = changes speed, J watches active separations, L boosts visibility, I inspects the nearest physical trace or missing coordinate. H hides the interface; Escape releases pointer lock.</p>
+        <p>Inspection markers and in-room structural displays are model-derived survey reconstructions, not preserved crew messages. Their information changes with the same geometry you can walk through. The absence of a room can be inspected from its former position, even when the room itself no longer exists.</p><p>The seven months are experience checkpoints, not an archival assertion about exact dates. The original room location is held in world coordinates after its structure departs. Earlier routes represent only your own movements.</p>
+        <p>Collision stops movement through intact hulls and machinery, including in free float. When a floor detaches, free float safely replaces walking. WATCH SEPARATIONS switches to an orbital tracking view; electrical cut arcs occur only at the separating joints.</p>
+        <p>Weather simulations are speculative and restricted to a bounded atmospheric observation volume; they do not occur in station vacuum. Sound is optional and silent in open vacuum.</p>
+      </div>
+    </div>
+    <div id="intro" class="intro"><div class="intro-content"><div class="intro-rule"></div><div class="kicker">MERIDIAN STATION / VIRGIL ORBIT</div><h1>THE SIXTH<br/>MONTH</h1><p>Learn a place before it becomes an absence.</p><p class="intro-steps">01 WALK / WASD &nbsp;·&nbsp; 02 INSPECT / I &nbsp;·&nbsp; 03 WITNESS / .</p>
+      <button id="dismiss-intro" type="button">START INSIDE MERIDIAN / WALK <span aria-hidden="true">&#8594;</span></button>
+      <button id="exterior-intro" type="button" class="resume-intro">START WITH EXTERIOR SURVEY / ORBIT</button>
+      <button id="resume-intro" type="button" class="resume-intro" hidden>CONTINUE PREVIOUS POSITION</button>
+      <p id="resume-summary" class="intro-resume-summary" hidden></p><button id="quiet-intro" type="button" class="quiet-intro" title="Press H to restore full controls">ENTER WITHOUT INSTRUMENTS / H TO RESTORE</button><span class="intro-note">Three unnamed figures are illustrative station population, not identified victims or recovered footage. Walk begins at Month Zero with collision enabled.</span></div></div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

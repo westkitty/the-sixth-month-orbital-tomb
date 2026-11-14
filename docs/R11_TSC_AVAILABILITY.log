@@ -1,0 +1,15 @@
+src/absence-visual.ts(3,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/crew.ts(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/crew.ts(3,26): error TS2307: Cannot find module 'three/addons/loaders/GLTFLoader.js' or its corresponding type declarations.
+src/crew.ts(23,32): error TS2339: Property 'env' does not exist on type 'ImportMeta'.
+src/crew.ts(24,28): error TS7006: Parameter 'gltf' implicitly has an 'any' type.
+src/crew.ts(29,29): error TS7006: Parameter 'obj' implicitly has an 'any' type.
+src/crew.ts(50,19): error TS7006: Parameter 'o' implicitly has an 'any' type.
+src/displacement-visual.ts(3,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/geometry.ts(1,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/geometry.ts(173,65): error TS2339: Property 'env' does not exist on type 'ImportMeta'.
+src/main.ts(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/main.ts(153,60): error TS2339: Property 'env' does not exist on type 'ImportMeta'.
+src/provenance-visual.ts(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/separation-vfx.ts(3,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/virgil.ts(1,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.

@@ -1,0 +1,40 @@
+{
+  "project": "THE SIXTH MONTH / Orbital Tomb R12",
+  "baseline": "Exact existing R11 source archive",
+  "r11_file_count": 145,
+  "r12_file_count": 152,
+  "changed_existing_files": [
+    "OPERATIONAL_STATE.md",
+    "README.md",
+    "index.html",
+    "public/sw.js",
+    "src/absence-visual.ts",
+    "src/geometry.ts",
+    "src/guidance.ts",
+    "src/main.ts",
+    "src/provenance-visual.ts",
+    "src/quality-budget.ts",
+    "src/save-model.ts",
+    "src/styles.css",
+    "src/ui.ts",
+    "tests/cut-navigation.test.mjs",
+    "tests/displacement.test.mjs",
+    "tests/r10-integrations.test.mjs",
+    "tests/r11-opening.test.mjs",
+    "tests/visual-assets.test.mjs"
+  ],
+  "new_files": [
+    "docs/R12_AWE_CONTRACT.md",
+    "docs/R12_IMPLEMENTATION_AND_VERIFICATION.md",
+    "src/wayfinding.ts",
+    "tests/r12-uplift.test.mjs",
+    "tools/r12_absence_patch.py",
+    "tools/r12_patch.py",
+    "tools/r12_performance_patch.py"
+  ],
+  "removed_files": [],
+  "protected_bytes_preserved": true,
+  "archive_filename": "THE_SIXTH_MONTH_ORBITAL_TOMB_R12.zip",
+  "checks": "107 source tests PASS; 27 TS modules syntax transpile PASS; Mac launcher bash -n PASS",
+  "blocked": "npm registry DNS EAI_AGAIN; DEX Mac remote internal error; browser/semantic Vite checks unverified"
+}

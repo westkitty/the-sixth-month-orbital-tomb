@@ -1,0 +1,13 @@
+
+> the-sixth-month@0.1.0 typecheck
+> tsc -p tsconfig.json --noEmit
+
+src/geometry.ts(1,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/geometry.ts(78,18): error TS7006: Parameter 'o' implicitly has an 'any' type.
+src/geometry.ts(83,22): error TS7006: Parameter 'o' implicitly has an 'any' type.
+src/geometry.ts(87,24): error TS7006: Parameter 'o' implicitly has an 'any' type.
+src/geometry.ts(104,65): error TS2339: Property 'env' does not exist on type 'ImportMeta'.
+src/geometry.ts(432,16): error TS7006: Parameter 'o' implicitly has an 'any' type.
+src/main.ts(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/main.ts(89,60): error TS2339: Property 'env' does not exist on type 'ImportMeta'.
+src/virgil.ts(1,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.

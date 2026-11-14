@@ -1,0 +1,398 @@
+{
+  "origin": "Microsoft Rocketbox / user private processed-glb Drive catalog",
+  "source_repository": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "source_commit": "0943055db6ec570bcef9f2c8b41c9e5467c808f9",
+  "license": "MIT, copyright (c) 2020 Microsoft. Retain LICENSE in distributed package.",
+  "status": "R11 extracted and optimized for game integration; historical identities not asserted",
+  "assets": [
+    {
+      "source_file": "Pilot_Female_01.glb",
+      "catalog_drive_file_id": "105Zy7dQXk2u1jLFikP_18JBZgtRNMZ7H",
+      "source_sha256": "7a934b0bfa7830d70825b247fb7d0335f8474aa63642ebf53e4eb97f5b5f83ff",
+      "source_bytes": 25857440,
+      "packaged_file": "pilot_female.glb",
+      "packaged_sha256": "23e35730810f149b4ca5a1d6b261fc09aae5b008c64da1d157e56984b4386ec1",
+      "packaged_bytes": 1309216,
+      "skeletal_rigs": 1,
+      "animations_preserved": 2,
+      "images": [
+        {
+          "imageIndex": 0,
+          "usage": "specular",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            256,
+            256
+          ],
+          "bytes": 12395,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 1,
+          "usage": "normal",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            512,
+            512
+          ],
+          "bytes": 240069,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 2,
+          "usage": "albedo",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            768,
+            768
+          ],
+          "bytes": 66161,
+          "mime": "image/jpeg"
+        },
+        {
+          "imageIndex": 3,
+          "usage": "specular",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            256,
+            256
+          ],
+          "bytes": 31125,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 4,
+          "usage": "normal",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            512,
+            512
+          ],
+          "bytes": 233966,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 5,
+          "usage": "albedo",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            1024,
+            1024
+          ],
+          "bytes": 141015,
+          "mime": "image/jpeg"
+        },
+        {
+          "imageIndex": 6,
+          "usage": "specular",
+          "original": [
+            2048,
+            1024
+          ],
+          "optimized": [
+            256,
+            128
+          ],
+          "bytes": 11567,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 7,
+          "usage": "normal",
+          "original": [
+            2048,
+            1024
+          ],
+          "optimized": [
+            512,
+            256
+          ],
+          "bytes": 87532,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 8,
+          "usage": "albedo",
+          "original": [
+            2048,
+            1024
+          ],
+          "optimized": [
+            768,
+            384
+          ],
+          "bytes": 34734,
+          "mime": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "source_file": "Pilot_Male_01.glb",
+      "catalog_drive_file_id": "1-45JXlAtxTYDl-0N6mZafDHjFsMD3jXU",
+      "source_sha256": "feb557cdbebdc2523a4fac48b7ab51f3f18838c6c4619adb33ebec8f6d9be28d",
+      "source_bytes": 20704904,
+      "packaged_file": "pilot_male.glb",
+      "packaged_sha256": "c56c0713deb32664db2cb57e42a11d50233385d58cfd0aa3b2bd08c8b66b2f29",
+      "packaged_bytes": 1060292,
+      "skeletal_rigs": 1,
+      "animations_preserved": 2,
+      "images": [
+        {
+          "imageIndex": 0,
+          "usage": "specular",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            256,
+            256
+          ],
+          "bytes": 19622,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 1,
+          "usage": "normal",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            512,
+            512
+          ],
+          "bytes": 252513,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 2,
+          "usage": "albedo",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            768,
+            768
+          ],
+          "bytes": 53267,
+          "mime": "image/jpeg"
+        },
+        {
+          "imageIndex": 3,
+          "usage": "specular",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            256,
+            256
+          ],
+          "bytes": 23930,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 4,
+          "usage": "normal",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            512,
+            512
+          ],
+          "bytes": 170353,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 5,
+          "usage": "albedo",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            1024,
+            1024
+          ],
+          "bytes": 106899,
+          "mime": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "source_file": "Medical_Female_02.glb",
+      "catalog_drive_file_id": "1MNXPlYGNustqohBI3LNQLVhO1Wscj9Zt",
+      "source_sha256": "2711ed667f89a50f9a2ba7b4bb8e0fcf3778b126ce260c8a50fb334e94b5bc40",
+      "source_bytes": 25083848,
+      "packaged_file": "medic_female.glb",
+      "packaged_sha256": "f3dbc6313778d1323b4e4cf778e08f77c6fdab70d64384f82571457d6cde1033",
+      "packaged_bytes": 1320732,
+      "skeletal_rigs": 1,
+      "animations_preserved": 2,
+      "images": [
+        {
+          "imageIndex": 0,
+          "usage": "specular",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            256,
+            256
+          ],
+          "bytes": 22659,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 1,
+          "usage": "normal",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            512,
+            512
+          ],
+          "bytes": 265669,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 2,
+          "usage": "albedo",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            768,
+            768
+          ],
+          "bytes": 72068,
+          "mime": "image/jpeg"
+        },
+        {
+          "imageIndex": 3,
+          "usage": "specular",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            256,
+            256
+          ],
+          "bytes": 27757,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 4,
+          "usage": "normal",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            512,
+            512
+          ],
+          "bytes": 220784,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 5,
+          "usage": "albedo",
+          "original": [
+            2048,
+            2048
+          ],
+          "optimized": [
+            1024,
+            1024
+          ],
+          "bytes": 131221,
+          "mime": "image/jpeg"
+        },
+        {
+          "imageIndex": 6,
+          "usage": "specular",
+          "original": [
+            1024,
+            512
+          ],
+          "optimized": [
+            256,
+            128
+          ],
+          "bytes": 41078,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 7,
+          "usage": "normal",
+          "original": [
+            1024,
+            256
+          ],
+          "optimized": [
+            512,
+            128
+          ],
+          "bytes": 6770,
+          "mime": "image/png"
+        },
+        {
+          "imageIndex": 8,
+          "usage": "albedo",
+          "original": [
+            1024,
+            256
+          ],
+          "optimized": [
+            768,
+            192
+          ],
+          "bytes": 8707,
+          "mime": "image/jpeg"
+        },
+        {
+          "imageIndex": 9,
+          "usage": "specular",
+          "original": [
+            1024,
+            256
+          ],
+          "optimized": [
+            256,
+            64
+          ],
+          "bytes": 10429,
+          "mime": "image/png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+exit=2
+
+> the-sixth-month@0.1.0 typecheck
+> tsc -p tsconfig.json --noEmit
+
+src/displacement-visual.ts(3,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/geometry.ts(1,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/geometry.ts(164,65): error TS2339: Property 'env' does not exist on type 'ImportMeta'.
+src/main.ts(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/main.ts(115,60): error TS2339: Property 'env' does not exist on type 'ImportMeta'.
+src/separation-vfx.ts(3,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/virgil.ts(1,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.

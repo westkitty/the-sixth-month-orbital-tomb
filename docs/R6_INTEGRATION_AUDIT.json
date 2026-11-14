@@ -1,0 +1,15 @@
+{
+  "version": "R6",
+  "typescriptFiles": 15,
+  "syntaxParseFailures": [],
+  "brokenRelativeImports": [],
+  "htmlIdCount": 71,
+  "referencedIdCount": 66,
+  "missingIds": [],
+  "duplicateIds": [],
+  "oneLoop": true,
+  "physicalTextures": 15,
+  "currentCache": "sixth-month-static-v8",
+  "prohibitedReferencesInRuntime": [],
+  "gitRepository": false
+}

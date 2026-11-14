@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", "module": "NodeNext", "moduleResolution": "NodeNext",
+    "strict": true, "skipLibCheck": true, "outDir": ".logic-build", "rootDir": "src",
+    "lib": ["ES2022", "DOM"], "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/domain.ts", "src/save-model.ts", "src/collision.ts", "src/forensic.ts", "src/displacement.ts", "src/cut-navigation.ts", "src/attachment.ts", "src/comparison-focus.ts", "src/touch-gesture.ts", "src/inquiry.ts", "src/services.ts", "src/acoustics.ts", "src/witness-cadence.ts", "src/scale-flight.ts", "src/quality-budget.ts", "src/guidance.ts", "src/experience-r13.ts"]
+}

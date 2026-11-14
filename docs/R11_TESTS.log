@@ -1,0 +1,604 @@
+TAP version 13
+# Subtest: local and world frames round-trip with nonzero pitch yaw roll, including reversed time
+ok 1 - local and world frames round-trip with nonzero pitch yaw roll, including reversed time
+  ---
+  duration_ms: 2.029143
+  type: 'test'
+  ...
+# Subtest: a room carries the rider away; reverse scrub returns the exact original coordinate
+ok 2 - a room carries the rider away; reverse scrub returns the exact original coordinate
+  ---
+  duration_ms: 0.203541
+  type: 'test'
+  ...
+# Subtest: real departed fragments remain attachable, empty former coordinates are not anchors
+ok 3 - real departed fragments remain attachable, empty former coordinates are not anchors
+  ---
+  duration_ms: 0.395706
+  type: 'test'
+  ...
+# Subtest: anchored movement really follows piece transform and stops recording invented footsteps
+ok 4 - anchored movement really follows piece transform and stops recording invented footsteps
+  ---
+  duration_ms: 0.486881
+  type: 'test'
+  ...
+# Subtest: real station colliders have stable owners and leave former-room spawn unblocked
+ok 5 - real station colliders have stable owners and leave former-room spawn unblocked
+  ---
+  duration_ms: 1.295848
+  type: 'test'
+  ...
+# Subtest: a human can walk the preserved observation/corridor/command route
+ok 6 - a human can walk the preserved observation/corridor/command route
+  ---
+  duration_ms: 12.378965
+  type: 'test'
+  ...
+# Subtest: wall and observation window stop sprint-speed movement without tunnelling
+ok 7 - wall and observation window stop sprint-speed movement without tunnelling
+  ---
+  duration_ms: 2.547902
+  type: 'test'
+  ...
+# Subtest: free float collides with floors and hulls but does not create ghost collision after departure
+ok 8 - free float collides with floors and hulls but does not create ghost collision after departure
+  ---
+  duration_ms: 1.048663
+  type: 'test'
+  ...
+# Subtest: electric cut seams exist during disassembly, reverse scrubbing is reversible
+ok 9 - electric cut seams exist during disassembly, reverse scrubbing is reversible
+  ---
+  duration_ms: 1.154609
+  type: 'test'
+  ...
+# Subtest: speed, visibility and watch preferences normalize old saves and reject extreme values
+ok 10 - speed, visibility and watch preferences normalize old saves and reject extreme values
+  ---
+  duration_ms: 0.491057
+  type: 'test'
+  ...
+# Subtest: one simulation loop owns motion and temporal effects, including disposal
+ok 11 - one simulation loop owns motion and temporal effects, including disposal
+  ---
+  duration_ms: 0.749199
+  type: 'test'
+  ...
+# Subtest: six real source-derived event windows preserve all 74 removable groups exactly once
+ok 12 - six real source-derived event windows preserve all 74 removable groups exactly once
+  ---
+  duration_ms: 3.298604
+  type: 'test'
+  ...
+# Subtest: cue navigation is bounded and exact in either direction
+ok 13 - cue navigation is bounded and exact in either direction
+  ---
+  duration_ms: 0.215629
+  type: 'test'
+  ...
+# Subtest: witness stop is overshoot-safe, reversible playback is independent
+ok 14 - witness stop is overshoot-safe, reversible playback is independent
+  ---
+  duration_ms: 0.195159
+  type: 'test'
+  ...
+# Subtest: real UI, scene camera, keyboard and stop logic are connected, not inert text
+ok 15 - real UI, scene camera, keyboard and stop logic are connected, not inert text
+  ---
+  duration_ms: 0.742469
+  type: 'test'
+  ...
+# Subtest: witness source change leaves walk zones and removal chronology untouched
+ok 16 - witness source change leaves walk zones and removal chronology untouched
+  ---
+  duration_ms: 0.271412
+  type: 'test'
+  ...
+# Subtest: non-wide actions clear stale watch focus and cannot secretly retain a witness stop
+ok 17 - non-wide actions clear stale watch focus and cannot secretly retain a witness stop
+  ---
+  duration_ms: 0.327885
+  type: 'test'
+  ...
+# Subtest: vacuum cut sparks are sampled from reversible model time and freeze at pause
+ok 18 - vacuum cut sparks are sampled from reversible model time and freeze at pause
+  ---
+  duration_ms: 0.326213
+  type: 'test'
+  ...
+# Subtest: only actual removable structures expose a reconstructed displacement
+ok 19 - only actual removable structures expose a reconstructed displacement
+  ---
+  duration_ms: 2.536084
+  type: 'test'
+  ...
+# Subtest: survey endpoints derive EXACTLY from the scene transform at every time
+ok 20 - survey endpoints derive EXACTLY from the scene transform at every time
+  ---
+  duration_ms: 3.095583
+  type: 'test'
+  ...
+# Subtest: reverse scrubbing removes the vector instead of leaving an impossible tether
+ok 21 - reverse scrubbing removes the vector instead of leaving an impossible tether
+  ---
+  duration_ms: 0.136813
+  type: 'test'
+  ...
+# Subtest: watch camera sticks to a physical seam until it stops separating
+ok 22 - watch camera sticks to a physical seam until it stops separating
+  ---
+  duration_ms: 0.275648
+  type: 'test'
+  ...
+# Subtest: old save state survives new survey preference and the new preference round trips
+ok 23 - old save state survives new survey preference and the new preference round trips
+  ---
+  duration_ms: 0.734808
+  type: 'test'
+  ...
+# Subtest: the rendered vector is a real, bounded live scene object wired to input and disposal
+ok 24 - the rendered vector is a real, bounded live scene object wired to input and disposal
+  ---
+  duration_ms: 0.785873
+  type: 'test'
+  ...
+# Subtest: inspection visibility cannot be erased by the Virgil atmospheric update loop
+ok 25 - inspection visibility cannot be erased by the Virgil atmospheric update loop
+  ---
+  duration_ms: 0.329578
+  type: 'test'
+  ...
+# Subtest: K toggles once per keypress even with OS keyboard auto-repeat
+ok 26 - K toggles once per keypress even with OS keyboard auto-repeat
+  ---
+  duration_ms: 0.205193
+  type: 'test'
+  ...
+# Subtest: camera interpolation is independent of display refresh rate
+ok 27 - camera interpolation is independent of display refresh rate
+  ---
+  duration_ms: 0.576283
+  type: 'test'
+  ...
+# Subtest: seven genuine timeline checkpoints and exactly six weather profiles
+ok 28 - seven genuine timeline checkpoints and exactly six weather profiles
+  ---
+  duration_ms: 1.364971
+  type: 'test'
+  ...
+# Subtest: reference geometry never changes the primary station identity
+ok 29 - reference geometry never changes the primary station identity
+  ---
+  duration_ms: 0.283851
+  type: 'test'
+  ...
+# Subtest: all six progressive removal waves exist and preserve song family ordering
+ok 30 - all six progressive removal waves exist and preserve song family ordering
+  ---
+  duration_ms: 0.208939
+  type: 'test'
+  ...
+# Subtest: the station has continuous, non-teleporting deterministic removal trajectories
+ok 31 - the station has continuous, non-teleporting deterministic removal trajectories
+  ---
+  duration_ms: 1.05336
+  type: 'test'
+  ...
+# Subtest: sequence of earlier time scrubs never affects current pose
+ok 32 - sequence of earlier time scrubs never affects current pose
+  ---
+  duration_ms: 1.16889
+  type: 'test'
+  ...
+# Subtest: each month has a measurably different structural population
+ok 33 - each month has a measurably different structural population
+  ---
+  duration_ms: 0.66146
+  type: 'test'
+  ...
+# Subtest: observation room original world coordinate is preserved while geometry vanishes
+ok 34 - observation room original world coordinate is preserved while geometry vanishes
+  ---
+  duration_ms: 0.321435
+  type: 'test'
+  ...
+# Subtest: collider walk zones disappear with their floor, including late access
+ok 35 - collider walk zones disappear with their floor, including late access
+  ---
+  duration_ms: 0.213116
+  type: 'test'
+  ...
+# Subtest: anchoring requires existing nearby geometry, then invalidates after removal
+ok 36 - anchoring requires existing nearby geometry, then invalidates after removal
+  ---
+  duration_ms: 0.391069
+  type: 'test'
+  ...
+# Subtest: six named body landmarks are actual stateful physical objects, never afterlife agents
+ok 37 - six named body landmarks are actual stateful physical objects, never afterlife agents
+  ---
+  duration_ms: 0.509334
+  type: 'test'
+  ...
+# Subtest: stochastic visual sampling uses fixed seed, not current frame order
+ok 38 - stochastic visual sampling uses fixed seed, not current frame order
+  ---
+  duration_ms: 0.191653
+  type: 'test'
+  ...
+# Subtest: timeline descriptions disclose reconstruction rather than false dates
+ok 39 - timeline descriptions disclose reconstruction rather than false dates
+  ---
+  duration_ms: 0.178594
+  type: 'test'
+  ...
+# Subtest: state persists meaningful controls, route and camera position
+ok 40 - state persists meaningful controls, route and camera position
+  ---
+  duration_ms: 0.591766
+  type: 'test'
+  ...
+# Subtest: malformed state and arbitrary save storage failure never corrupt baseline
+ok 41 - malformed state and arbitrary save storage failure never corrupt baseline
+  ---
+  duration_ms: 0.340644
+  type: 'test'
+  ...
+# Subtest: evidence identity is bounded, uniquely keyed, and attached to real structures
+ok 42 - evidence identity is bounded, uniquely keyed, and attached to real structures
+  ---
+  duration_ms: 1.413573
+  type: 'test'
+  ...
+# Subtest: physical window and its empty original coordinates are distinct scan targets
+ok 43 - physical window and its empty original coordinates are distinct scan targets
+  ---
+  duration_ms: 1.87745
+  type: 'test'
+  ...
+# Subtest: departed fragment is physically elsewhere and does not pretend to be the empty former room
+ok 44 - departed fragment is physically elsewhere and does not pretend to be the empty former room
+  ---
+  duration_ms: 0.429706
+  type: 'test'
+  ...
+# Subtest: structural census derives only from live removal logic, never fabricated populations
+ok 45 - structural census derives only from live removal logic, never fabricated populations
+  ---
+  duration_ms: 0.828437
+  type: 'test'
+  ...
+# Subtest: reconstructed source constraints remain explicit at all seventeen inspection points
+ok 46 - reconstructed source constraints remain explicit at all seventeen inspection points
+  ---
+  duration_ms: 0.538016
+  type: 'test'
+  ...
+# Subtest: all six named landmark scan positions derive from the same physical source as the world
+ok 47 - all six named landmark scan positions derive from the same physical source as the world
+  ---
+  duration_ms: 0.821797
+  type: 'test'
+  ...
+# Subtest: old save schema upgrades without destroying navigation or inventing discoveries
+ok 48 - old save schema upgrades without destroying navigation or inventing discoveries
+  ---
+  duration_ms: 0.797711
+  type: 'test'
+  ...
+# Subtest: inspection UI has keyboard and touch access, actual gameplay caller and model texture lifecycle
+ok 49 - inspection UI has keyboard and touch access, actual gameplay caller and model texture lifecycle
+  ---
+  duration_ms: 1.239965
+  type: 'test'
+  ...
+# Subtest: signature realization only claims a prior visit when the actual route proves one
+ok 50 - signature realization only claims a prior visit when the actual route proves one
+  ---
+  duration_ms: 0.312203
+  type: 'test'
+  ...
+# Subtest: every UI element referenced from the real interaction path exists in the shipped HTML
+ok 51 - every UI element referenced from the real interaction path exists in the shipped HTML
+  ---
+  duration_ms: 1.166216
+  type: 'test'
+  ...
+# Subtest: inspection points inherit the actual parent yaw and the exact physical connection across reversal
+ok 52 - inspection points inherit the actual parent yaw and the exact physical connection across reversal
+  ---
+  duration_ms: 0.217232
+  type: 'test'
+  ...
+# Subtest: P001: deduction UI is connected to actual evidence, save and game inspection
+ok 53 - P001: deduction UI is connected to actual evidence, save and game inspection
+  ---
+  duration_ms: 0.980742
+  type: 'test'
+  ...
+# Subtest: P002: modeled room connectivity drives actual attached lights and physical telemetry
+ok 54 - P002: modeled room connectivity drives actual attached lights and physical telemetry
+  ---
+  duration_ms: 0.210823
+  type: 'test'
+  ...
+# Subtest: P003: absence memory is the players route, never recreated collision or a dead person
+ok 55 - P003: absence memory is the players route, never recreated collision or a dead person
+  ---
+  duration_ms: 0.324461
+  type: 'test'
+  ...
+# Subtest: P004: every new room fixture is on a real parent piece and exposed through one scanner
+ok 56 - P004: every new room fixture is on a real parent piece and exposed through one scanner
+  ---
+  duration_ms: 0.221087
+  type: 'test'
+  ...
+# Subtest: P005: one reversible world-space camera path exists, does not relocate source piece
+ok 57 - P005: one reversible world-space camera path exists, does not relocate source piece
+  ---
+  duration_ms: 0.258393
+  type: 'test'
+  ...
+# Subtest: P006: witness pacing is optional, source-bounded and user overrides remain
+ok 58 - P006: witness pacing is optional, source-bounded and user overrides remain
+  ---
+  duration_ms: 0.277911
+  type: 'test'
+  ...
+# Subtest: P007: vacuum sound is gated on physical contact and uses only local synthesis
+ok 59 - P007: vacuum sound is gated on physical contact and uses only local synthesis
+  ---
+  duration_ms: 0.299964
+  type: 'test'
+  ...
+# Subtest: P008: reconstruction provenance appears as real instanced scene geometry and is disposable
+ok 60 - P008: reconstruction provenance appears as real instanced scene geometry and is disposable
+  ---
+  duration_ms: 0.254297
+  type: 'test'
+  ...
+# Subtest: P009: first-minute unobstructed view is optional, and full controls can be restored
+ok 61 - P009: first-minute unobstructed view is optional, and full controls can be restored
+  ---
+  duration_ms: 0.343378
+  type: 'test'
+  ...
+# Subtest: P010: measured high-draw-call response batches local geometry; no model-wide merge
+ok 62 - P010: measured high-draw-call response batches local geometry; no model-wide merge
+  ---
+  duration_ms: 1.265353
+  type: 'test'
+  ...
+# Subtest: no museum or invented metaphysical lore slipped into added runtime modules
+ok 63 - no museum or invented metaphysical lore slipped into added runtime modules
+  ---
+  duration_ms: 0.374384
+  type: 'test'
+  ...
+# Subtest: scale flight shroud is noninteractive and always reset on interruption
+ok 64 - scale flight shroud is noninteractive and always reset on interruption
+  ---
+  duration_ms: 0.314345
+  type: 'test'
+  ...
+# Subtest: changing inference case immediately recalculates submission eligibility
+ok 65 - changing inference case immediately recalculates submission eligibility
+  ---
+  duration_ms: 0.170262
+  type: 'test'
+  ...
+# Subtest: three inference families are source-bounded and require distinct scanned evidence
+ok 66 - three inference families are source-bounded and require distinct scanned evidence
+  ---
+  duration_ms: 2.031228
+  type: 'test'
+  ...
+# Subtest: source-ordered relay removal cannot physically erase intact observation rooms
+ok 67 - source-ordered relay removal cannot physically erase intact observation rooms
+  ---
+  duration_ms: 0.433832
+  type: 'test'
+  ...
+# Subtest: contact sound is truly silent without physical coupling and attenuates with distance
+ok 68 - contact sound is truly silent without physical coupling and attenuates with distance
+  ---
+  duration_ms: 0.250822
+  type: 'test'
+  ...
+# Subtest: witness pause preserves agency without inventing extra monthly events
+ok 69 - witness pause preserves agency without inventing extra monthly events
+  ---
+  duration_ms: 0.174288
+  type: 'test'
+  ...
+# Subtest: scale flight is finite, continuous and reversible in the same visual coordinate system
+ok 70 - scale flight is finite, continuous and reversible in the same visual coordinate system
+  ---
+  duration_ms: 1.240417
+  type: 'test'
+  ...
+# Subtest: adaptive quality threshold has sufficient samples and hysteresis
+ok 71 - adaptive quality threshold has sufficient samples and hysteresis
+  ---
+  duration_ms: 6.742331
+  type: 'test'
+  ...
+# Subtest: viewport crossing stays dark only over the modeled glass passage
+ok 72 - viewport crossing stays dark only over the modeled glass passage
+  ---
+  duration_ms: 0.334565
+  type: 'test'
+  ...
+# Subtest: entry is new Month Zero WALK with separate explicit previous-session continuation
+ok 73 - entry is new Month Zero WALK with separate explicit previous-session continuation
+  ---
+  duration_ms: 1.804271
+  type: 'test'
+  ...
+# Subtest: guidance is action grounded, progressive, rewindable and source-neutral
+ok 74 - guidance is action grounded, progressive, rewindable and source-neutral
+  ---
+  duration_ms: 0.278683
+  type: 'test'
+  ...
+# Subtest: three actual private catalog assets preserve human skins and texture bounds and match provenance hashes
+ok 75 - three actual private catalog assets preserve human skins and texture bounds and match provenance hashes
+  ---
+  duration_ms: 7.165968
+  type: 'test'
+  ...
+# Subtest: crew are scene objects, not procedural or historical victims; renderer updates only visible models
+ok 76 - crew are scene objects, not procedural or historical victims; renderer updates only visible models
+  ---
+  duration_ms: 0.725174
+  type: 'test'
+  ...
+# Subtest: offline cache version includes all three actual GLBs
+ok 77 - offline cache version includes all three actual GLBs
+  ---
+  duration_ms: 0.283209
+  type: 'test'
+  ...
+# Subtest: optional shadows are scoped to populated walk interior, not orbit or economy modes
+ok 78 - optional shadows are scoped to populated walk interior, not orbit or economy modes
+  ---
+  duration_ms: 0.287466
+  type: 'test'
+  ...
+# Subtest: all static UI element IDs referenced by semantic interface code exist
+ok 79 - all static UI element IDs referenced by semantic interface code exist
+  ---
+  duration_ms: 1.336499
+  type: 'test'
+  ...
+# Subtest: one authoritative animation loop, with supported cleanup
+ok 80 - one authoritative animation loop, with supported cleanup
+  ---
+  duration_ms: 0.422396
+  type: 'test'
+  ...
+# Subtest: actual originally built meshes are used for ghost and temporal comparison, not surrogate boxes
+ok 81 - actual originally built meshes are used for ghost and temporal comparison, not surrogate boxes
+  ---
+  duration_ms: 0.179486
+  type: 'test'
+  ...
+# Subtest: weather is bounded to planet probe and exposes all six profiles
+ok 82 - weather is bounded to planet probe and exposes all six profiles
+  ---
+  duration_ms: 0.122211
+  type: 'test'
+  ...
+# Subtest: world remains standalone: no museum imports, no runtime cloud rendering
+ok 83 - world remains standalone: no museum imports, no runtime cloud rendering
+  ---
+  duration_ms: 0.478729
+  type: 'test'
+  ...
+# Subtest: comparison can cover all existing model pieces and isolate exactly one stable ID
+ok 84 - comparison can cover all existing model pieces and isolate exactly one stable ID
+  ---
+  duration_ms: 2.468234
+  type: 'test'
+  ...
+# Subtest: invalid, prototype chain and forged IDs never become selectables
+ok 85 - invalid, prototype chain and forged IDs never become selectables
+  ---
+  duration_ms: 0.791722
+  type: 'test'
+  ...
+# Subtest: selected comparison still derives its exact earlier and current poses from one source
+ok 86 - selected comparison still derives its exact earlier and current poses from one source
+  ---
+  duration_ms: 0.374043
+  type: 'test'
+  ...
+# Subtest: legacy save remains valid; unsafe focused combination cannot persist without a selected real piece
+ok 87 - legacy save remains valid; unsafe focused combination cannot persist without a selected real piece
+  ---
+  duration_ms: 1.081732
+  type: 'test'
+  ...
+# Subtest: source comparison mesh visibility is controlled by one real action and existing clone instances
+ok 88 - source comparison mesh visibility is controlled by one real action and existing clone instances
+  ---
+  duration_ms: 0.888766
+  type: 'test'
+  ...
+# Subtest: one touch rotates; addition of second touch switches to pinch instead of overwriting first
+ok 89 - one touch rotates; addition of second touch switches to pinch instead of overwriting first
+  ---
+  duration_ms: 2.516996
+  type: 'test'
+  ...
+# Subtest: when one finger leaves, remaining finger resumes from its current point without a jump
+ok 90 - when one finger leaves, remaining finger resumes from its current point without a jump
+  ---
+  duration_ms: 0.206465
+  type: 'test'
+  ...
+# Subtest: per-pointer cancellation ignores a third or unknown touch and never loses the first pair
+ok 91 - per-pointer cancellation ignores a third or unknown touch and never loses the first pair
+  ---
+  duration_ms: 0.14218
+  type: 'test'
+  ...
+# Subtest: zoom ratios and wild pointer jumps are bounded, invalid input ignored
+ok 92 - zoom ratios and wild pointer jumps are bounded, invalid input ignored
+  ---
+  duration_ms: 0.268797
+  type: 'test'
+  ...
+# Subtest: a new touch after pinch starts cleanly and provides no phantom rotation
+ok 93 - a new touch after pinch starts cleanly and provides no phantom rotation
+  ---
+  duration_ms: 0.223841
+  type: 'test'
+  ...
+# Subtest: real input system owns gesture lifecycle, pointer-lock fallback and touch click suppression
+ok 94 - real input system owns gesture lifecycle, pointer-lock fallback and touch click suppression
+  ---
+  duration_ms: 0.468924
+  type: 'test'
+  ...
+# Subtest: 15 original runtime texture assets exist as valid nonempty PNG files
+ok 95 - 15 original runtime texture assets exist as valid nonempty PNG files
+  ---
+  duration_ms: 2.35105
+  type: 'test'
+  ...
+# Subtest: new art has one runtime owner, preserves exact original geometry ghosts and disposal
+ok 96 - new art has one runtime owner, preserves exact original geometry ghosts and disposal
+  ---
+  duration_ms: 0.230351
+  type: 'test'
+  ...
+# Subtest: materials remain offline and deterministic without CDN or generation APIs
+ok 97 - materials remain offline and deterministic without CDN or generation APIs
+  ---
+  duration_ms: 0.326694
+  type: 'test'
+  ...
+# Subtest: twelve docking identity plates share one authored atlas and their stable existing IDs
+ok 98 - twelve docking identity plates share one authored atlas and their stable existing IDs
+  ---
+  duration_ms: 0.300765
+  type: 'test'
+  ...
+# Subtest: directional floor graphics are local to live geometry and offline cache is versioned
+ok 99 - directional floor graphics are local to live geometry and offline cache is versioned
+  ---
+  duration_ms: 0.22961
+  type: 'test'
+  ...
+1..99
+# tests 99
+# suites 0
+# pass 99
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 306.137942

@@ -1,0 +1,27 @@
+{
+  "name": "the-sixth-month",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A standalone, canon-conscious Three.js spatial-memory experience above Virgil",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsc -p tsconfig.test.json && node --test tests/*.test.mjs",
+    "check": "npm run typecheck && npm run test && npm run build",
+    "dev:local": "vite --host 127.0.0.1"
+  },
+  "dependencies": {
+    "three": "0.185.1"
+  },
+  "devDependencies": {
+    "@types/three": "0.185.0",
+    "typescript": "5.9.3",
+    "vite": "7.1.12"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

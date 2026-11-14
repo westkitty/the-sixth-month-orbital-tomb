@@ -1,0 +1,380 @@
+PROJECT: THE SIXTH MONTH
+SUBTITLE: ORBITAL TOMB — MERIDIAN STATION, ABOVE VIRGIL
+
+ROLE
+Act as a senior Three.js graphics engineer, immersive-world designer, technical artist, interaction engineer, and Starsilk canon-continuity specialist.
+
+MISSION
+BUILD THE ACTUAL WORKING EXPERIENCE: a standalone, fully explorable, cinematic 3D world depicting the six-month surgical destruction of Meridian Station in high orbit over Virgil by Shard-God Tiger.
+
+Use vanilla Three.js 0.185.1, TypeScript, Vite, and original or source-authorized assets. No React, game-engine substitution, museum dependencies, or conventional website experience.
+
+This is not a battle simulator, museum installation, cinematic slideshow, or generic space exploration demo.
+
+The experience is an exploration of systematic annihilation through architecture, time, orbital scale, spatial memory, and the terrifying precision of a god who dismantles a habitat as deliberately as an engineer disassembles a machine.
+
+BUILD, RUN, TEST, AND DELIVER THE PROJECT. Do not substitute a design document, mockup, screenshots, or unimplemented feature promises.
+
+1. CANON CONTRACT
+
+Confirmed Starsilk anchors:
+- Orbital Tomb is the external creative project/song title, not a generic name for a cosmic phenomenon.
+- Virgil is a cold, desaturated gas giant.
+- Meridian Station is an industrial orbital habitat high above Virgil.
+- Shard-God Tiger deliberately and surgically dismantles the station over approximately six months.
+- The destruction is progressive and controlled, not a single explosion, battle, or accidental orbital failure.
+- The dead become persistent orbital landmarks and deliberate corpse geography, culminating in a tableau of worship-through-annihilation.
+- Tiger is cold, calculated, strategic, and exact. Do not portray him as a furious, chaotic villain.
+- Death is final in Starsilk. Structural memory and residual data do not mean the dead remain conscious.
+
+The known song-material progression begins with docking arms and then includes the outer communications/transport ring and successive living-deck destruction. Preserve source-established ordering without inventing exact monthly dates. If additional authoritative Orbital Tomb source materials are accessible, inspect them first and use them to govern station topology, removal order, named victims, dialogue, and scene beats.
+
+Never invent an exact station population, death count, hull plan, orbital radius, technological mechanism, or minute-by-minute event history and present it as locked lore. Label necessary creative engineering extrapolations as reconstruction data in a separate developer provenance file, not as canonical facts within the world.
+
+Do not turn the orbital bodies into a Drakken Blood Ring. Do not introduce Drakken, battles, hero missions, ghost survivors, supernatural afterlife suffering, or unrelated cosmic phenomena.
+
+Do not add spider-like creatures or imagery.
+
+2. EXPERIENCE PHILOSOPHY
+
+The environment must feel enormous, inhabited before its destruction, industrially convincing, and progressively hollow.
+
+The governing visual principle is ABSENCE, NOT SPECTACLE.
+
+At Month Zero, architectural density establishes the shape and purpose of the station. At Month Six, the same navigable spatial coordinates remain available even though almost all the enclosing structure is gone.
+
+The player should discover the magnitude of the destruction by remembering what stood where, not by reading narration panels.
+
+The experience must support two fundamentally different scales:
+A. Human scale: doors, bunks, handrails, panels, maintenance passages, scuffed floors, pressure hatches, industrial machinery, working spaces, and observation rooms.
+B. Cosmic scale: a massive station silhouette, separated structural sections, debris distributed along orbital trajectories, the vast curvature of Virgil, stellar light, and distant ordered corpse geography.
+
+All unverified station furnishings and engineering details are visual reconstruction, not new canon.
+
+3. WORLD GEOMETRY AND ART DIRECTION
+
+Construct a substantial connected station environment with real three-dimensional geometry:
+- Long traversable habitat corridors.
+- Observation rooms with commanding views of Virgil.
+- Docking assemblies and pressure access routes.
+- Structural spines and load-bearing ribs.
+- Cargo/storage sections and maintenance compartments.
+- Industrial junction chambers.
+- Airlock transitions and exterior handholds.
+- Exterior inspection routes.
+- Removable habitable and structural volumes.
+- A high-altitude free-float exploration space surrounding the station.
+
+The world should feel designed and structurally interconnected, not assembled from disconnected demo rooms.
+
+Use physically based industrial materials, meaningful wear, dense silhouette hierarchy, localized illumination, believable surface detail, high-quality shadows, disciplined emissive accents, selective reflections, and strong atmospheric perspective in the planetary backdrop.
+
+Do not use generic rainbow neon, artificial nebula fog, constant particle spam, fake space dust in vacuum, or excessive bloom.
+
+Virgil should dominate the sky: immense, cold, desaturated, layered with subdued cloud bands and immense atmospheric depth. Render a convincing curved gas-giant globe with soft terminator, atmospheric limb shading, altitude-dependent cloud structures, and distance-appropriate detail. Never depict a solid terrestrial landscape or landmass on Virgil.
+
+Use scale-aware rendering, adaptive detail, stable camera near/far handling, and graceful visual fallbacks. The world must remain convincing from a tiny maintenance passage and from thousands of station-lengths away.
+
+4. THE SEVEN TEMPORAL STATES
+
+Implement seven distinct navigable states:
+MONTH ZERO — before the six-month dismantling.
+MONTH ONE — early source-ordered structural removal.
+MONTH TWO — further source-ordered dismantling.
+MONTH THREE — deepening loss of habitable/connected space.
+MONTH FOUR — fragmentation and increasing orbital separation.
+MONTH FIVE — the station approaching complete erasure.
+MONTH SIX — the near-total absence of Meridian and the final orbital composition.
+
+These are seven experience checkpoints, not assertions that specific named components were canonically removed on particular dates. Use source-grounded mappings where they exist; otherwise define clear, explicitly provisional intermediate reconstruction states.
+
+Each month must be visibly and spatially distinct:
+- Geometry changes physically.
+- Removed compartments cease to function as walkable structure.
+- Detached components remain visible as drifting orbital objects when appropriate.
+- Navigation, collision, handholds, structural continuity, light sources, and acoustics update to match the current world.
+- Ghost geometry, if enabled, shows exact prior structural volumes but has no physical collision.
+- Every change is deterministic, reversible, and inspectable.
+
+Make time a pure state input wherever practical. Given the same month, elapsed transition phase, and seed, the same pieces must occupy the same locations regardless of framerate or the sequence of earlier timeline scrubs.
+
+No random popping, instant unexplained disappearance, teleporting debris, or reused still-frame tricks.
+
+5. THE SIXTH MONTH — SIGNATURE REVEAL
+
+Create a specific, memorable location at Month Zero: an observation room with a view of Virgil.
+
+Store its original camera position, orientation, structural volume, and connected walking path in world coordinates.
+
+At Month Six, allow the player to return to that exact spatial location.
+
+There is no room. No floor. No wall. No viewport.
+
+Its former architectural outline can be optionally revealed as a restrained, transparent spatial memory derived from the Month Zero geometry.
+
+Virgil fills the immense emptiness where the viewport once framed a comparatively small piece of sky. Detached station fragments and source-grounded orbital remains lie at radically different depths.
+
+The player may disable every interface layer until the scene contains only the vanished architecture's absence, Virgil, the surviving objects, and the quiet orbital void.
+
+SIGNATURE SECOND REVEAL:
+Record the user's own exploratory path through the intact station. When the timeline reaches Month Six, allow that path to appear as a delicate spatial trace running through corridors and rooms that no longer exist.
+
+This trace is a visualization of the player's exploration, not a ghost, surviving consciousness, or historical recording of victims.
+
+The impact comes from recognizing that a place can be erased while its coordinates remain.
+
+6. TIGER'S PRESENCE
+
+Tiger's authorship should be apparent through the calculated nature of the disassembly, not through constant direct appearances.
+
+Each removed section should read as an intentional selection, with controlled separation and deliberate final placement rather than accidental catastrophic destruction.
+
+If Tiger is depicted physically, use only verified canonical visual references when available. His known visual constraints include solid faceted obsidian-like construction, cyan fracture lines, crystalline features, and no generic fleshy superhero musculature or capes. If visual identity cannot be verified, do not improvise a misleading full-body portrait.
+
+Prefer restraint over excessive divine special effects.
+
+There must be no combat encounter with Tiger, no boss fight, no fabricated dialogue attributed to him, and no implication that his cruelty is a loss of control.
+
+7. ORBITAL CORPSE GEOGRAPHY
+
+The dead and their arrangement are essential to Orbital Tomb's established premise.
+
+Represent their persistent physical presence as part of the six-month transformation. Use restrained, non-gratuitous distance, lighting, composition, and orbital placement. Source-grounded named persons may appear only when their identities and circumstances are established.
+
+Their arrangement should eventually communicate deliberate, horrifying order rather than a random explosion's debris cloud.
+
+Do not make victims animate, scream after death, possess awareness, or transform into supernatural ghosts. Do not substitute blood-red magic rings for the actual station and its physical consequences.
+
+8. TEN CORE INTERACTIONS
+
+Implement all ten as working features, not decorative UI:
+
+1. TIME SCRUB — Move between Month Zero and Month Six with smooth deterministic transitions, pause, step, reverse, and replay.
+
+2. INTERIOR EXPLORATION — Walk through physically traversable compartments and observe their changing structural states.
+
+3. AIRLOCK / FREE FLOAT — Move from surviving interiors into controlled six-degree-of-freedom exterior exploration. Support inertial movement with optional assisted braking.
+
+4. STRUCTURAL ANCHORING — Attach to surviving handholds, rails, or designated inspection anchors. Remove attachment eligibility when that geometry no longer exists.
+
+5. SEGMENT TRACKING — Select a detached structural component and follow its source-to-departure trajectory with stable identification, before/after transforms, and an optional camera-follow mode.
+
+6. NEGATIVE ARCHITECTURE — Reveal or conceal exact original floor, wall, doorway, room, and station footprints as transparent non-colliding geometry.
+
+7. TEMPORAL COMPARISON — Overlay two selected months in distinct visual treatments with adjustable transparency. Never create conflicting colliders.
+
+8. DISASSEMBLY SEQUENCE — Inspect an ordered, navigable history of structural removals. Clearly separate canon-confirmed facts from illustrative reconstruction metadata.
+
+9. ORBITAL PERSPECTIVES — Seamlessly switch between local first-person exploration, exterior inspection, wide orbital view, fixed observation viewpoints, and the Month Six former-room viewpoint.
+
+10. RETURN THROUGH TIME — Restore Month Zero deterministically and replay another exploration path while maintaining the ability to revisit and compare the previous route.
+
+Support keyboard/mouse, touch controls, and accessible alternatives for every critical interaction. Use compact, purposeful controls that remain hidden during cinematic exploration.
+
+9. TRAVERSAL AND PLAYER SAFETY
+
+Support walking locomotion on surviving floors and free-floating movement in open vacuum.
+
+Use actual collider and navigation state derived from current station geometry.
+
+Never let a timeline transition permanently strand the player inside deleted geometry, trap them behind invalid doors, or prevent access to Month Six.
+
+When supporting geometry disappears:
+- Preserve world-space position if safe.
+- If the player would intersect solids or lose an essential route, smoothly transfer them into a safe free-float state or nearest valid anchor.
+- Provide explicit recover, reorient, and return-to-known-position controls.
+- Keep free-float rescue available even when no station structure remains.
+
+Do not imply that player safety mechanics, magnetic boots, or camera tools are canon technologies unless the source establishes them; they are experience-level traversal systems.
+
+10. ORBITAL LIGHTING AND VISUAL TIME
+
+Implement a controllable 24-hour LIGHTING PRESENTATION CYCLE.
+
+This is an artistic observation control, not an assertion about Virgil's canonical rotation period, the station's orbital period, or local astrophysical timing.
+
+Allow continuous adjustment through orbital sunrise, harsh side lighting, eclipse-like shadow conditions, cold stellar illumination, and shifting planetary terminator appearance.
+
+Lighting must affect station materials, shadows, Virgil's sphere, detached fragments, and the final Month Six composition consistently.
+
+Use a coherent light-direction model rather than independently animating unrelated effects.
+
+11. GAS-GIANT ATMOSPHERIC OBSERVATION MODES
+
+Preserve six selectable environmental modes, adapted to Virgil's gas-giant nature:
+
+CLEAR — high visibility above subdued atmospheric bands.
+CLOUDY — dense layered cloud structures and shifting band contrast.
+RAIN — hypothetical condensate-fall visualization within a bounded atmospheric probe volume, never terrestrial rain on a ground surface.
+THUNDERSTORM — hypothetical deep convective storm structure, intermittent electrical illumination, and localized cloud turbulence.
+SNOW — hypothetical upper-atmosphere crystalline precipitation, not snowfall onto land.
+FOG — aerosol and haze opacity within a bounded atmospheric observation volume.
+
+These modes are exploratory visual simulations, NOT claims that Virgil canonically exhibits specific water-based precipitation, weather chemistry, or seasonal conditions.
+
+Build an optional atmospheric observation camera/projection allowing the user to inspect these profiles close to a simulated cloud layer. Provide a clear return to orbital exploration.
+
+Weather effects exist within the bounded planetary atmosphere or simulated observation layer ONLY. Never put rain, snow, drifting fog, or weather particles into exterior vacuum around Meridian.
+
+12. SOUND AND SILENCE
+
+Use original, restrained procedural or appropriately licensed environmental audio.
+
+At Month Zero, interiors may contain industrial hum, ventilation, distant machinery, and subtle structural vibration.
+
+Sound should diminish as occupied space becomes abandoned and enclosed compartments disappear.
+
+In vacuum, do not use ordinary airborne exterior sound. If the player is attached to structure, limited contact-transmitted vibration or deliberately non-diegetic accessibility cues may be used if clearly distinguished.
+
+Use silence as a deliberate narrative mechanism.
+
+No constant cinematic orchestra, invented victim dialogue, jump scares, or generic science-fiction alarm loops. Offer audio controls, captions for important cues, and a mute option.
+
+13. INTERFACE LANGUAGE
+
+This must not look like a conventional website, dashboard, educational exhibit, or museum kiosk.
+
+The world fills the screen.
+
+Allow only a restrained, collapsible exploration interface containing:
+- Current month / timeline.
+- Movement and camera mode.
+- Lighting phase.
+- Atmospheric observation profile.
+- Selected structure details.
+- Ghost and comparison controls.
+- Accessibility and recovery settings.
+
+Hide all nonessential controls when idle or in cinematic mode.
+
+Use concise text and understated industrial instrumentation. Avoid giant navigation bars, marketing-style cards, fake exhibition labels, historical plaques, achievement popups, or gamified score systems.
+
+14. TECHNICAL IMPLEMENTATION
+
+Required stack:
+- Vanilla Three.js 0.185.1.
+- TypeScript.
+- Vite.
+- Browser-native input and media APIs as appropriate.
+- No React and no secondary game engine.
+
+Create an isolated, runnable standalone project. Do not read from or mutate any existing museum application, exhibit registry, collision configuration, publication system, or production source repository.
+
+Build original scene geometry or import explicitly authorized standalone assets. Do not depend on an inaccessible external station model.
+
+Use a modular architecture with distinct ownership of:
+- World and renderer lifecycle.
+- Station construction and stable component IDs.
+- Month-by-month state transitions.
+- Debris and orbital motion.
+- Collision and navigation.
+- Camera modes and traversal.
+- Interaction and input handling.
+- Virgil rendering and atmospheric observation.
+- Lighting.
+- Sound.
+- State persistence.
+- Accessibility.
+- Resource loading and disposal.
+
+Provide initialize/start, update, pause/resume, serialize, restore, reset, and dispose functionality as appropriate for a self-contained application.
+
+Use exactly one application-owned render loop. Avoid duplicate RAF loops, accumulated listeners, dangling timers, repeated initialization, non-disposed GPU resources, and state-dependent memory leaks.
+
+Persist and restore meaningful exploration state: month, lighting phase, atmospheric mode, selected component, camera position/mode, overlay settings, and optional recorded route.
+
+Reset must reproduce the same initial scene and deterministic timeline outcomes.
+
+Use instancing, appropriate LOD, culling, adaptive pixel ratio, bounded shadow costs, efficient material reuse, and resource pooling where appropriate. Prefer geometrically meaningful detail over expensive decorative particles.
+
+Work offline after installation/build without cloud rendering APIs, telemetry dependencies, externally hosted essential assets, or required runtime accounts.
+
+15. ACCESSIBILITY AND CONTROL
+
+Support:
+- WASD and mouse/pointer-lock exploration.
+- Keyboard-only access to all essential actions.
+- Touch-friendly movement and timeline controls.
+- Rebindable or clearly documented key mappings.
+- Visible focus states.
+- Text alternatives for important temporal and spatial events.
+- Reduced-motion mode with minimal involuntary camera movement.
+- Adjustable contrast and visual-effects intensity.
+- Optional camera smoothing and assisted navigation.
+- No mandatory flashing, rapid camera cuts, or inaccessible timing puzzles.
+
+No player should need to perceive tiny distant particles, hear a sound, or execute a difficult free-float maneuver to understand or access the Month Six reveal.
+
+16. VISUAL ACCEPTANCE BAR
+
+The project must survive these five real demonstrations:
+
+A. MONTH ZERO — Stand in an observation room. The habitat feels industrial, credible, populated by architectural evidence of life, and massive beyond the immediate view.
+
+B. THE FIRST REMOVAL — From a stable camera coordinate, advance through the first source-supported structural separation. The relevant geometry detaches deliberately and its new state remains physically consistent.
+
+C. THE VANISHING CORRIDOR — Walk a corridor in an earlier month, revisit its exact coordinates after removal, and inspect the missing structure using the ghost-footprint control.
+
+D. THE ORBITAL WIDE SHOT — Float far enough away to see Meridian's changing silhouette, Virgil's overwhelming scale, and the increasingly deliberate arrangement of separated station remnants.
+
+E. THE SIXTH MONTH — Reoccupy the exact former observation-room coordinates. Toggle original structural outlines and the player's earlier route. Then hide them both. The scene must remain visually and emotionally legible without any interface.
+
+If these scenes look like disconnected effects, a toy orbital sandbox, or a collection of procedural primitives, the visual objective has not been met.
+
+17. TESTS AND VALIDATION
+
+Provide automated tests and direct runtime verification for:
+- All seven month states.
+- Ordered source-grounded structural changes.
+- Deterministic forward/backward scrubbing.
+- Stable detached-object transforms.
+- All ten interactions.
+- Six visibly distinct atmospheric modes.
+- Lighting adjustment and terminator consistency.
+- Walking, airlock transition, anchoring, and free-float recovery.
+- Month transitions while inside structures scheduled for removal.
+- Month Six former-room coordinate preservation.
+- Ghost comparison alignment.
+- Route recording and replay.
+- Serialization, restoration, and deterministic reset.
+- Keyboard/touch accessibility.
+- Reduced-motion behavior.
+- Offline build.
+- Resource cleanup and repeat initialization.
+- Representative desktop performance.
+
+Run type checking, focused tests, production build, and browser runtime checks. Use the available browser/test environment rather than claiming visual verification from source code alone.
+
+Inspect the actual Month Zero and Month Six rendered states where tools permit. Record any unverified visual checks explicitly. Make one bounded repair pass after failed required validation, then report remaining blockers truthfully.
+
+18. DELIVERABLES
+
+Deliver:
+1. The runnable standalone Three.js/TypeScript/Vite project.
+2. Complete editable source.
+3. Original procedural geometry/materials and any properly licensed assets.
+4. All ten functioning interactions.
+5. Seven deterministic monthly states.
+6. Six bounded atmospheric observation modes.
+7. Lighting and orbital perspective systems.
+8. Automated tests and documented runtime checks.
+9. A concise README with installation, controls, testing, and offline operation.
+10. A CANON_PROVENANCE.md distinguishing confirmed Starsilk facts, source-specific timeline evidence, and noncanonical engineering reconstructions.
+11. A concise completion report listing what works, what was actually verified, and anything incomplete.
+
+Do not deploy, publish, commit, push, or alter another project unless separately authorized.
+
+FINAL CREATIVE DIRECTIVE
+
+This experience is not about witnessing a station explode.
+
+It is about learning the shape of a place, watching that place be deliberately dismantled, and discovering that the universe retains coordinates even after everything occupying them is gone.
+
+Every removed walkway, separated docking arm, silent compartment, and distant body must serve that governing idea.
+
+Build an experience where the player remembers a doorway, returns six months later, and finds nothing left to open.
+
+The station is gone.
+The space it occupied is not.
+
+Make THAT the spectacle.

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "srcfiles": 13,
+  "missingImports": [],
+  "elementReferences": 63,
+  "missingIDs": [],
+  "animationLoopStarts": 1,
+  "animationLoopStops": 1,
+  "materialCount": 15
+}

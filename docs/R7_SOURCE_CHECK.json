@@ -1,0 +1,12 @@
+{
+  "version": "R7",
+  "tests": 62,
+  "test_failures": 0,
+  "typescript_source_parses": 15,
+  "ui_references": 66,
+  "html_ids": 71,
+  "missing_referenced_ids": [],
+  "textures": 15,
+  "single_render_loop": true,
+  "npm_dependency_resolved": false
+}

@@ -1,0 +1,146 @@
+
+> the-sixth-month@0.1.0 test
+> tsc -p tsconfig.test.json && node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: seven genuine timeline checkpoints and exactly six weather profiles
+ok 1 - seven genuine timeline checkpoints and exactly six weather profiles
+  ---
+  duration_ms: 1.342358
+  type: 'test'
+  ...
+# Subtest: reference geometry never changes the primary station identity
+ok 2 - reference geometry never changes the primary station identity
+  ---
+  duration_ms: 0.343246
+  type: 'test'
+  ...
+# Subtest: all six progressive removal waves exist and preserve song family ordering
+ok 3 - all six progressive removal waves exist and preserve song family ordering
+  ---
+  duration_ms: 0.206711
+  type: 'test'
+  ...
+# Subtest: the station has continuous, non-teleporting deterministic removal trajectories
+ok 4 - the station has continuous, non-teleporting deterministic removal trajectories
+  ---
+  duration_ms: 1.72225
+  type: 'test'
+  ...
+# Subtest: sequence of earlier time scrubs never affects current pose
+ok 5 - sequence of earlier time scrubs never affects current pose
+  ---
+  duration_ms: 1.171302
+  type: 'test'
+  ...
+# Subtest: each month has a measurably different structural population
+ok 6 - each month has a measurably different structural population
+  ---
+  duration_ms: 1.195938
+  type: 'test'
+  ...
+# Subtest: observation room original world coordinate is preserved while geometry vanishes
+ok 7 - observation room original world coordinate is preserved while geometry vanishes
+  ---
+  duration_ms: 0.497919
+  type: 'test'
+  ...
+# Subtest: collider walk zones disappear with their floor, including late access
+ok 8 - collider walk zones disappear with their floor, including late access
+  ---
+  duration_ms: 0.285829
+  type: 'test'
+  ...
+# Subtest: anchoring requires existing nearby geometry, then invalidates after removal
+ok 9 - anchoring requires existing nearby geometry, then invalidates after removal
+  ---
+  duration_ms: 0.634624
+  type: 'test'
+  ...
+# Subtest: six named body landmarks are actual stateful physical objects, never afterlife agents
+ok 10 - six named body landmarks are actual stateful physical objects, never afterlife agents
+  ---
+  duration_ms: 0.715005
+  type: 'test'
+  ...
+# Subtest: stochastic visual sampling uses fixed seed, not current frame order
+ok 11 - stochastic visual sampling uses fixed seed, not current frame order
+  ---
+  duration_ms: 0.175213
+  type: 'test'
+  ...
+# Subtest: timeline descriptions disclose reconstruction rather than false dates
+ok 12 - timeline descriptions disclose reconstruction rather than false dates
+  ---
+  duration_ms: 0.185789
+  type: 'test'
+  ...
+# Subtest: state persists meaningful controls, route and camera position
+ok 13 - state persists meaningful controls, route and camera position
+  ---
+  duration_ms: 0.567774
+  type: 'test'
+  ...
+# Subtest: malformed state and arbitrary save storage failure never corrupt baseline
+ok 14 - malformed state and arbitrary save storage failure never corrupt baseline
+  ---
+  duration_ms: 0.305769
+  type: 'test'
+  ...
+# Subtest: all static UI element IDs referenced by semantic interface code exist
+ok 15 - all static UI element IDs referenced by semantic interface code exist
+  ---
+  duration_ms: 1.331412
+  type: 'test'
+  ...
+# Subtest: one authoritative animation loop, with supported cleanup
+ok 16 - one authoritative animation loop, with supported cleanup
+  ---
+  duration_ms: 0.432971
+  type: 'test'
+  ...
+# Subtest: actual originally built meshes are used for ghost and temporal comparison, not surrogate boxes
+ok 17 - actual originally built meshes are used for ghost and temporal comparison, not surrogate boxes
+  ---
+  duration_ms: 0.19286
+  type: 'test'
+  ...
+# Subtest: weather is bounded to planet probe and exposes all six profiles
+ok 18 - weather is bounded to planet probe and exposes all six profiles
+  ---
+  duration_ms: 0.188624
+  type: 'test'
+  ...
+# Subtest: world remains standalone: no museum imports, no runtime cloud rendering
+ok 19 - world remains standalone: no museum imports, no runtime cloud rendering
+  ---
+  duration_ms: 0.57868
+  type: 'test'
+  ...
+# Subtest: 13 original runtime texture assets exist as valid nonempty PNG files
+ok 20 - 13 original runtime texture assets exist as valid nonempty PNG files
+  ---
+  duration_ms: 8.361784
+  type: 'test'
+  ...
+# Subtest: new art has one runtime owner, preserves exact original geometry ghosts and disposal
+ok 21 - new art has one runtime owner, preserves exact original geometry ghosts and disposal
+  ---
+  duration_ms: 0.314703
+  type: 'test'
+  ...
+# Subtest: materials remain offline and deterministic without CDN or generation APIs
+ok 22 - materials remain offline and deterministic without CDN or generation APIs
+  ---
+  duration_ms: 0.338949
+  type: 'test'
+  ...
+1..22
+# tests 22
+# suites 0
+# pass 22
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 99.028341
